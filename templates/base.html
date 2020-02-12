@@ -3,12 +3,12 @@
     <head>
         <title>{% block page_title %}{% endblock %} </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
         
     </head>
-    <body>
-   
+    
+     <body>
        
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">Goodbean</a>
@@ -42,7 +42,7 @@
                         </a>
                      </li>
 			</ul>
-            <form  action="{% url 'search' %}" method="get" class="form-inline my-2 my-lg-0">
+            <form  action="{% url 'search' %}" method="get" class="form-inline my-2 my-lg-0" >
                     <input class="form-control rounded-0 mr-0" name="q" type="search" placeholder="Product Search" aria-label="Search">
                     <button type="search" class="btn btn-light btn-sm rounded-0">Search</button>
             </form>
@@ -56,6 +56,7 @@
             {{ message }}
         {% endfor %}
     </div>
+   
     {% endif %}
     {% block content %}{% endblock %}
 
