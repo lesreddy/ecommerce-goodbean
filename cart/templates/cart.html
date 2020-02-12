@@ -5,9 +5,16 @@
 {% block content %}
 <div class="row row-flex">
     {% for item in cart_items %}
-    
-    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-display">
-        
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+			<img class="product" src="{{ MEDIA_URL }}{{ item.product.image }}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+					content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
         <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
         
         <div class="caption">
@@ -36,7 +43,7 @@
 <div class="row">
     <p>Total</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-    <a href="/" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
 </div>
 
 {% endblock %}
