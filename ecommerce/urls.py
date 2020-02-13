@@ -31,6 +31,7 @@ from .settings import MEDIA_ROOT
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home, name="home"),
+    url(r'^index/', index, name="index"),
     url(r'^accounts/', include(accounts_urls)),
     url(r'^products/', include(urls_products)),
     url(r'^cart/', include(urls_cart)),
