@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row,
+.container-fluid,
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
 .cform {
     width: 50%;
 } 
@@ -94,4 +113,24 @@ hr {
     background: white;
     height: 1px;
     border: none;
+}
+
+/* Footer */
+
+footer {
+    background: black;
+}
+
+.icon {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+
+}
+
+.icon:hover 
+{
+     color:grey; 
+     text-decoration:none; 
+     cursor:pointer;  
 }
