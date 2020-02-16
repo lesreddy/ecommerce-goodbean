@@ -118,7 +118,7 @@ hr {
 /* Footer */
 
 footer {
-    background: black;
+    background: #343a40;
 }
 
 .icon {
@@ -134,3 +134,4 @@ footer {
      text-decoration:none; 
      cursor:pointer;  
 }
+
