@@ -4,7 +4,6 @@
 <div class="jumbotron">
 </div>
 <div class="d-flex flex-column justify-content-center">
-	<!-- Three columns of text below the carousel -->
 	<div class="row justify-content-center">
 		<div class="col-lg-4 text-center">
 			<img
@@ -24,8 +23,28 @@
 			<p>
 				<a class="btn btn-secondary bg-dark" href="#" role="button">View Range &raquo;</a>
 			</p>
+            {% for product in products|slice:":1" %}
+			<div class="panel-body">
+				<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+				</div>
+			
+				<h3>{{ product.name }}</h3>
+				<p class="product-description">{{ product.description }}</p>
+				<p>{{ product.price }}</p>
+			
+				<form method="post" action="{% url 'add_to_cart' product.id %}">
+					{% csrf_token %}
+					<div class="input-group">
+						<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+						<span class="input-group-btn">
+					                            <button class="btn btn-success" type="submit">Add</button>
+					                        </span>
+					</div>
+				</form>
+			</div>
+		    {% endfor %}
 		</div>
-		<!-- /.col-lg-4 -->
+		
 		<div class="col-lg-4 text-center">
 			<img
               class="rounded-circle"
@@ -44,8 +63,28 @@
 			<p>
 				<a class="btn btn-secondary bg-dark" href="#" role="button">View Range &raquo;</a>
 			</p>
+            {% for product in products|slice:"1:2" %}
+			<div class="panel-body">
+				<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+				</div>
+			
+				<h3>{{ product.name }}</h3>
+				<p class="product-description">{{ product.description }}</p>
+				<p>{{ product.price }}</p>
+			
+				<form method="post" action="{% url 'add_to_cart' product.id %}">
+					{% csrf_token %}
+					<div class="input-group">
+						<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+						<span class="input-group-btn">
+					    <button class="btn btn-success" type="submit">Add</button>
+					    </span>
+					</div>
+				</form>
+			</div>
+		    {% endfor %}
 		</div>
-		<!-- /.col-lg-4 -->
+		
 		<div class="col-lg-4 text-center">
 			<img
               class="rounded-circle"
@@ -64,32 +103,28 @@
 			<p>
 				<a class="btn btn-secondary bg-dark" href="#" role="button">View Range &raquo;</a>
 			</p>
+            {% for product in products|slice:"2:3" %}
+			<div class="panel-body">
+				<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+				</div>
+			
+				<h3>{{ product.name }}</h3>
+				<p class="product-description">{{ product.description }}</p>
+				<p>{{ product.price }}</p>
+			
+				<form method="post" action="{% url 'add_to_cart' product.id %}">
+					{% csrf_token %}
+					<div class="input-group">
+						<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+						<span class="input-group-btn">
+					                            <button class="btn btn-success" type="submit">Add</button>
+					                        </span>
+					</div>
+				</form>
+			</div>
+		    {% endfor %}
 		</div>
-		<!-- /.col-lg-4 -->
+		
 	</div>
-</div>
-
-<div class="d-flex justify-content-center"">
-    {% for product in products %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-            <div class="panel-body">
-                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-
-                <h3>{{ product.name }}</h3>
-                <p class="product-description">{{ product.description }}</p>
-                <p>{{ product.price }}</p>
-
-                <form method="post" action="{% url 'add_to_cart' product.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    {% endfor %}
 </div>
 {% endblock %}
