@@ -3,48 +3,81 @@
 {% load bootstrap_tags %}
 
 {% block content %}
-<section class="products-showcase">
-	<div class="container">
-    <div class="row align-items-center row-header card-columns text-center justify-content-center">
-    <div class="card-deck">
-    {% for item in cart_items %}
-		<div class="card" style="width: 18rem;">
-			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-			<div class="card-body">
-				<h5 class="card-title">{{ item.product.name }}</h5>
-				<p class="card-text">{{ item.product.description }}</p>
-                <p>€{{ item.product.price }}</p>
-				<p>
-					<form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-						{% csrf_token %}
-						<div class="form-group">
-							<label for="exampleInputAmount" class="sr-only">New Qty</label>
-							<div class="input-group">
-								<div class="input-group-addon">Qty</div>
-								<input name="quantity" type="number" min="0" max="999" class="form-control">
-								<div class="input-group-addon">{{item.quantity}}</div>
-							</div>
-						</div>
-						<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Amend</button>
-					</form>
-				</p>
-				<div class="row">
-					<div class="col-6 d-flex">
-						<p>Total €</p>
-						<p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-					</div>
-					<div class="col-6">
-						<a href="{% url 'checkout' %}" class="btn btn-success"
-							role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
-					</div>
-				</div>
-			</div>
-		</div>
+<section>
+    <div class="px-4 px-lg-0">
+        <div class="py-5 d-flex justify-content-center">
+            <h1 class="display-4"><strong>Review Your Order</strong></h1>
+        </div>
+
+        <div class="pb-5 d-flex justify-content-center">
+            <div class="container">
+                <div class="row bordered">
+                    <div class="col-lg-12 pl-5 pt-5 pr-5 bg-white ">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="border-0 bg-dark">
+                                            <div class="p-2 px-3 text-uppercase hed1">Product</div>
+                                        </th>
+                                        <th scope="col" class="border-0 bg-dark">
+                                            <div class="py-2 text-uppercase hed1">Price</div>
+                                        </th>
+                                        <th scope="col" class="border-0 bg-dark">
+                                            <div class="py-2 text-uppercase hed1">Qty</div>
+                                        </th>
+                                        <th scope="col" class="border-0 bg-dark">
+                                            <div class="py-2 text-uppercase hed1">Remove</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in cart_items %} 
+                                    <tr>
+                                        <th scope="row" class="border-0">
+                                            <div class="p-2">
+                                                <img src="{{MEDIA_URL}}{{item.product.image}}" class="card-img-top product-image" alt="{{product.name}}" style="width: 3em;" /></td>
+                                                <div class="ml-3 d-inline-block align-middle">
+                                                    <h5 class="mb-0"> <a href="#"
+                                                            class="text-dark d-inline-block align-middle">{{ item.product.name }}
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="border-0 align-middle"><strong>€{{ item.product.price }}</strong></td>
+                                        <td class="border-0 align-middle"><strong>{{ item.quantity }}</strong></td>
+                                        <td class="align-middle"><a href="#" class="text-dark"><i
+                                                    class="fa fa-trash"></i></a>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                                {% endfor %}
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="p-4">
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                        class="text-muted">Order Subtotal </strong><strong>€{{ total }}</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                        class="text-muted">Delivery</strong><strong>€10.00</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                        class="text-muted">Total</strong>
+                                    <h5 class="font-weight-bold">€{{ total }}</h5>
+                                </li>
+                            </ul><a href="{% url 'checkout' %}"
+                                class="btn btn-warning rounded-pill py-2 btn-block font-weight-bold">Proceed to
+                                checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
-    {% endfor %}
-    
+
+</section>  
 
 
 {% endblock %}

@@ -65,6 +65,12 @@ footer {
     margin: 0 auto;
 }
 
+.product2 {
+    width: 70px;
+    height: 70px;
+    
+}
+
 caption p {
     word-wrap: break-word;
 }
@@ -114,6 +120,19 @@ hr {
     height: 1px;
     border: none;
 }
+
+
+/* Cart */
+
+.hed1 {
+    color: white;
+}
+
+.bordered {
+    border: 2px solid black;
+
+}
+
 
 /* Footer */
 
