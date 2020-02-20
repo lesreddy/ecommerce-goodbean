@@ -59,11 +59,15 @@
 	</nav>
    
     {% if messages %}
-    <div>
-        {% for message in messages %}
-            {{ message }}
+    <ul class="messages" id="messages">
+        {% for msg in messages %}
+        <li>
+            <div class="alert alert-{{msg.level_tag}}" role="alert">
+                {{msg.message}}
+            </div>
+        </li>
         {% endfor %}
-    </div>
+    </ul>
    
     {% endif %}
     {% block content %}{% endblock %}
@@ -98,5 +102,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="{% static 'js/goodbean.js' %}"></script>
+        
 
 </html>
