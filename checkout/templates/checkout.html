@@ -14,9 +14,9 @@
 
 {% block content %}
 <section class="container-fluid">
-	<div class="row d-flex justify-content-center">
-		{% for item in cart_items %}
-		<div class="col-md-4 mt-2 panel-body border border-dark">
+	<div class="row d-flex">
+		{% for item in cart_items|slice:":1" %}
+		<div class="col-sm-4 mt-2 panel-body border border-dark">
 			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')">
 			</div>
 		
@@ -39,7 +39,60 @@
 				<p>Total</p>
 				<p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
 			</div>
-            {% endfor %}
+        </div>
+        {% endfor %}
+        {% for item in cart_items|slice:"1:2" %}
+		<div class="col-sm-4 mt-2 panel-body border border-dark">
+			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')">
+			</div>
+		
+			<h3>{{ item.product.name }}</h3>
+			<p class="product-description">{{ item.product.description }}</p>
+			<p class="font-weight-bold">€{{ item.product.price }}</p>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				<label class="form-check-label" for="inlineRadio1">Strong</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				<label class="form-check-label" for="inlineRadio2">Medium</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+				<label class="form-check-label" for="inlineRadio3">Mild</label>
+			</div>
+            <div class="row">
+				<p>Total</p>
+				<p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+			</div>
+        </div>
+        {% endfor %}
+        {% for item in cart_items|slice:"2:3" %}
+		<div class="col-sm-4 mt-2 panel-body border border-dark">
+			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')">
+			</div>
+		
+			<h3>{{ item.product.name }}</h3>
+			<p class="product-description">{{ item.product.description }}</p>
+			<p class="font-weight-bold">€{{ item.product.price }}</p>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				<label class="form-check-label" for="inlineRadio1">Strong</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				<label class="form-check-label" for="inlineRadio2">Medium</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+				<label class="form-check-label" for="inlineRadio3">Mild</label>
+			</div>
+            <div class="row">
+				<p>Total</p>
+				<p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+			</div>
+            <p><strong>{{ item.quantity }}</strong></p>
+        {% endfor %}
 		</div>
 	</div>
 	
