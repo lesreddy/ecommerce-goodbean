@@ -68,13 +68,8 @@
                                     <h5 class="font-weight-bold">€{{ total }}</h5>
                                 </li>
                             </ul>
-							{% for item in cart_items %}
-							{% if item.quantity >= 1 %}
-							<a href="{% url 'checkout' %}" class="btn btn-warning rounded-pill py-2 btn-block font-weight-bold">Proceed to
+                            <a href="{% url 'checkout' %}" class="btn btn-warning rounded-pill py-2 btn-block font-weight-bold">Proceed to
 								checkout</a>
-							{% else %}
-							{% endif %}
-							{% endfor %}
                             
                         </div>
                     </div>
