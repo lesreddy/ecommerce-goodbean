@@ -159,3 +159,10 @@ footer {
      cursor:pointer;  
 }
 
+/* Profile Page */
+
+.profile-landing {
+    width: 100vh;
+    height: 100vh;
+
+}

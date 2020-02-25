@@ -6,6 +6,38 @@
 
 {% block content %}
 
-<p>{{ profile.email }}</p>
+<section class="container-fluid">
+	<div class="row d-flex justify-content-center align-self-center m-3">
+			<div class="col-4 d-flex">
+				<div class="card border-0" style="width: 15rem;">
+					<img class="card-img-top" src="/static/{{ 'img/gbavatar.png' }}" alt="profile avatar">
+					<div class="card-body">
+						<h5 class="card-title">Hello, {{ user }}</h5>
+						<p class="card-text">{{ profile.email }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4 d-flex">
+				<div class="d-flex flex-column">
+					<div class="p-2 flex-grow-1 align-self-center justify-content-center d-flex">
+					    <p class="align-self-center">Your Orders</p>
+					</div>
+					<div class="p-2 flex-grow-1 align-self-center justify-content-center d-flex">
+						<p class="align-self-center">Your Address</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4 d-flex">
+				<div class="d-flex flex-column">
+					<div class="p-2 flex-grow-1 align-self-center justify-content-center d-flex">
+					    <p class="align-self-center">Login and Security</p>
+					</div>
+					<div class="p-2 flex-grow-1 align-self-center justify-content-center d-flex">
+						<p class="align-self-center">Payment Options</p>
+					</div>
+				</div>
+			</div>
+	</div>
+</section>
 
 {% endblock %}
