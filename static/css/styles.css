@@ -22,11 +22,6 @@ body {
 } 
 
 
-body {
-    font-family: Arial;
-    padding-bottom: 100px;
-}
-
 footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -85,11 +80,6 @@ caption p {
     border-color: transparent;
     padding: 0 10px;
 }
-
-/* .panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
-} */
 
 .product-description {
     min-height: 40px;
