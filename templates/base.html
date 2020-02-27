@@ -8,8 +8,7 @@
 			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
 	</head>
-    <body>
-       
+    <body>   
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="{% url 'home' %}">Goodbean</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +69,7 @@
    
     {% endif %}
     {% block content %}{% endblock %}
-<footer>
+    <footer id="footer">
 	<div class="row">
 		<div class="col-md-6 mb-2 d-flex justify-content-center justify-content-md-start">
 			<a class="icon" href="#">Goodbean</a>
@@ -83,8 +82,9 @@
 			<a href="" class="col-md4 icon"><i class="fab fa-twitter"></i></a>
 		</div>
 		</div>
-	</div>
-</footer>
+	
+    </footer>
+</div>
     <script src="{% static 'js/goodbean.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

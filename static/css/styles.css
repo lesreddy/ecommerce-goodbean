@@ -1,3 +1,5 @@
+/* Global */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +18,9 @@ body {
     height: 100%;
 }
 
+html {
+  overflow-y: scroll;
+}
 
 .cform {
     width: 50%;
@@ -112,6 +117,24 @@ hr {
     border: none;
 }
 
+
+/* Keep Footer at bottom of page reference https://matthewjamestaylor.com/blog/bottom-footer-demo.htm 
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#body {
+    padding-bottom: 80px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+} */
 /* Navbar */
 
 
@@ -151,8 +174,21 @@ footer {
 
 /* Profile Page */
 
+/* .avatar {
+    max-height: 15rem;
+} */
+
+
 .profile-landing {
     width: 100vh;
     height: 100vh;
 
 }
+
+/* Media Queries */
+
+/* @media only screen and (max-width: 800px) {
+  .avatar {
+    margin-top: 2rem;
+  }
+} */
