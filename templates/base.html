@@ -10,7 +10,8 @@
 	</head>
     <body>   
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="{% url 'home' %}">Goodbean</a>
+		<a class="navbar-brand" href="{% url 'home' %}"><img
+                        src="{% static 'img/goodbeanlogo.png' %}" alt="goodbean logo"></a></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -69,20 +70,81 @@
    
     {% endif %}
     {% block content %}{% endblock %}
-    <footer id="footer">
-	<div class="row">
-		<div class="col-md-6 mb-2 d-flex justify-content-center justify-content-md-start">
-			<a class="icon" href="#">Goodbean</a>
-		</div>
-		
-		<div class="col-md-6">
-		<div class="row d-flex justify-content-around">
-			<a href="" class="col-md4 icon"><i class="fab fa-instagram"></i></a>
-			<a href="" class="col-md4 icon"><i class="fab fa-facebook"></i></a>
-			<a href="" class="col-md4 icon"><i class="fab fa-twitter"></i></a>
-		</div>
-		</div>
-	
+    <footer class="bg-dark pt-2">
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-md-4 p-3 my-2">
+                    <div class="container border-top">
+                        <h5 class="text-uppercase text-white py-3">Links</h5>
+                        <ul class="bg-dark list-group">
+                            <li class="bg-dark border-0 list-group-item"><a class="footer-anchor" href="">About</a></li>
+                            <li class="bg-dark border-0 list-group-item"><a class="footer-anchor" href="">Contact</a>
+                            </li>
+                            <li class="bg-dark border-0 list-group-item"><a class="footer-anchor" href="">Terms and
+                                    Conditions</a></li>
+                            <li class="bg-dark border-0 list-group-item"><a class="footer-anchor" href="">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-4 p-3 my-2">
+                    <div class="container border-top">
+                        <h5 class="text-uppercase text-white py-3">Find Us</h5>
+                        <div id="map" class="pb-3" style="max-width: 75%; height: 75%;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38727.45433918035!2d-8.665159238043081!3d52.65156190941521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c611f545113%3A0xa00c7a997317330!2sLimerick!5e0!3m2!1sen!2sie!4v1583315123241!5m2!1sen!2sie"
+                                width="100%" height="75%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            <h5 class="pt-3 text-white"><span class="pr-2"><i
+                                        class="fas fa-map-marker-alt"></i></span>811
+                                Coffee Street,
+                                Limerick, Ireland</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 my-2">
+                    <div class="container border-top">
+                        <h5 class="text-uppercase text-white py-3">Newsletter</h5>
+                        <form class="mb-3">
+                            <div class="input-group mb-2">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    placeholder="Email Address" aria-describedby="emailHelp">
+                                <div class="input-group-append">
+                                    <button type="submit" class="bg-warning input-group-text"><i
+                                            class="far fa-envelope"></i></button>
+                                </div>
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone else.</small>
+                        </form>
+
+                    </div>
+                    <div class="container border-top">
+                        <h5 class="text-uppercase text-white py-3">Get in Touch</h5>
+                        <div class="pb-2">
+                            <a class="footer-anchor" href="#"><span><i class="far fa-envelope"></i></span>
+                                goodbean@enquiries.com</a>
+                        </div>
+                        <div>
+                            <a class="footer-anchor" href="#"><span><i class="fas fa-phone-square"></i></span> +353 61
+                                811 1000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-warning">
+            <div class="col-md-6 mb-2 d-flex justify-content-center justify-content-md-start">
+                <a class=" text-dark font-weight-bold font-italic" href="#"><img class="pl-2 mt-3"
+                        src="{% static 'img/goodbeanlogo.png' %}" alt="goodbean logo"></a>
+            </div>
+            <div class="col-md-6">
+                <div class="row d-flex justify-content-around social">
+                    <a href="" class="col-md4 footer-anchor"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="col-md4 footer-anchor"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="col-md4 footer-anchor"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
     <script src="{% static 'js/goodbean.js' %}"></script>
