@@ -286,25 +286,6 @@ hr {
 }
 
 
-
-
-/* Profile Page */
-
-/* .avatar {
-    max-height: 15rem;
-} */
-
-
-.profile-landing {
-    width: 100vh;
-    height: 100vh;
-
+.footer {
+  background-image: linear-gradient(#DAA317, #F6CC62);
 }
-
-/* Media Queries */
-
-/* @media only screen and (max-width: 800px) {
-  .avatar {
-    margin-top: 2rem;
-  }
-} */
