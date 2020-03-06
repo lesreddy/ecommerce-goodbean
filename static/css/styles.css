@@ -1,4 +1,4 @@
-/* Global */
+/************************* Global **************************/
 
 * {
   margin: 0;
@@ -18,22 +18,14 @@ body {
     height: 100%;
 }
 
-html {
-  overflow-y: scroll;
-}
+
 
 .cform {
     width: 50%;
 } 
 
 
-footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
-}
+
 
 .icon-bar {
     background-color: #fff;
@@ -90,13 +82,7 @@ caption p {
     min-height: 40px;
 }
 
-.jumbotron {
-    background: url("/static/img/coffewithbeans.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20em;
-}
+/************************* Home Page **************************/
 
 .landing {
     background: url("/static/img/wood.jpg");
@@ -117,7 +103,79 @@ hr {
     border: none;
 }
 
-/* Cart */
+.homebase {
+    background: url("/static/img/beanswithgrinder.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20em;
+}
+
+.product-wrap {
+    border: 8px solid black;
+}
+
+.grouphead {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 19rem;
+
+}
+
+/* Below strikethrough animation referenced from https://codepen.io/tsimenis/pen/BKdENX */
+
+.strike {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.strike:before, .strike:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: black;
+}
+
+.strike:before {
+  left: -2.5px;
+}
+.strike:after {
+  right: 2.5px;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strike:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strike:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+/************************* Products Page **************************/
+
+.productlanding {
+    background: url("/static/img/coffewithbeans.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20em;
+}
+
+
+
+/************************* Cart **************************/
 
 .hed1 {
     color: white;

@@ -11,13 +11,13 @@
 		<div class="col-md-12">
 
 			<!-- Heading -->
-			<h2 class="display-4 font-weight-bold mb-2">Goodbean</h2>
+			<h2 class="display-1 font-weight-bold mb-2">Goodbean</h2>
 
 			<!-- Divider -->
 			<hr>
 
 			<!-- Description -->
-			<h4 class="my-4">Premium Coffee Roasters</h4>
+			<h2 class="my-4">Premium Coffee Roasters</h2>
 			<button type="button" class="btn btn-warning">Order Now</i></button>
 
 		</div>
@@ -25,21 +25,35 @@
 	</div>
 </div>
 </header>
-{% endblock %}
-<script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+<div class="container-fluid">
+	<div class="row my-5">
+		<div class="offset-2 col-8 offset-md-4 col-md-4">
+			<p class="text-center">We are coffee roasters, the best at what we do. We require equally complete knowledge and skills from our stakeholders. The result is an incredible synergy which creates the perfect blend of coffee, every time.</p>
+		</div>
+	</div>
+	<div class="row my-5 d-flex justify-content-center">
+		<img class="grouphead" src="{% static 'img/grouphead.jpg' %}" alt="coffee group head">
+	</div>
+    <div class="row my-5">
+		<div class="offset-2 col-8 offset-md-4 col-md-4">
+			<p class="text-center">Coffee is a ritual, a little pleasure in the morning, a pause, an energy, a perfect moment. Our values of unsurpassed quality, ethical supply and community reinvestment drive our mission to create that perfect moment, every time.</p>
+		</div>
+	</div>
+    <div class="row my-5 d-flex justify-content-center">
+			<img class="grouphead" src="{% static 'img/coffeepouring.jpg' %}" alt="mug with coffee">
+	</div>
+    <div class="row my-5">
+		<div class="offset-2 col-8 offset-md-5 col-md-2">
+			<ul class="list-group product-wrap">
+                <li class="border-0 list-group-item text-center"><a class="footer-anchor text-dark font-weight-bold text-center" href=""><span class="strike">Liberica</span></a></li>
+                <li class=" border-0 list-group-item text-center"><a class="footer-anchor text-dark font-weight-bold text-center" href=""><span class="strike">Arabica</span></a></li>
+                <li class=" border-0 list-group-item text-center"><a class="footer-anchor text-dark font-weight-bold text-center" href=""><span class="strike">Robusta</span></a></li>
+            </ul>
+		</div>
+	</div>
+</div>
 
+<div class="homebase">
+</div>
+{% endblock %}
 </html>
