@@ -123,6 +123,34 @@ hr {
 
 }
 
+.buttonhome {
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #daa317;
+    border: 2px #daa317 solid;
+    border-radius: 4px;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+    -o-transition: 0.25s ease-in;
+    -ms-transition: 0.25s ease-in;
+    -moz-transition: 0.25s ease-in;
+    -webkit-transition: 0.25s ease-in;
+}
+
+.buttonhome:hover {
+  color: white;
+  background: #daa317;
+}
+
+
+
 /* Below strikethrough animation referenced from https://codepen.io/tsimenis/pen/BKdENX */
 
 .strike {
@@ -288,4 +316,8 @@ hr {
 
 .footer {
   background-image: linear-gradient(#DAA317, #F6CC62);
+}
+
+.footer-wrap {
+    background-color: black;
 }
