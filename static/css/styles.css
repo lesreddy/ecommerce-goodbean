@@ -1,5 +1,7 @@
 /************************* Global **************************/
 
+@import url('https://fonts.googleapis.com/css?family=Amaranth:700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +86,12 @@ caption p {
 
 /************************* Home Page **************************/
 
+.title {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 5rem;
+}
+
+
 .landing {
     background: url("/static/img/wood.jpg");
     background-position: center;
@@ -131,8 +139,8 @@ hr {
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2px;
-    color: #daa317;
-    border: 2px #daa317 solid;
+    color: #fff;
+    border: 2px #fff solid;
     border-radius: 4px;
     background: none;
     text-transform: uppercase;
@@ -147,9 +155,8 @@ hr {
 .buttonhome:hover {
   color: white;
   background: #daa317;
+  border: 2px #daa317 solid;
 }
-
-
 
 /* Below strikethrough animation referenced from https://codepen.io/tsimenis/pen/BKdENX */
 
@@ -214,6 +221,10 @@ hr {
 }
 /************************* Navbar **************************/
 
+
+
+
+
 /* change the background color */
 .navbar-custom {
     background-color: black;
@@ -267,9 +278,25 @@ hr {
     color: grey;
     background-color:white;
 }
+.navbar {
+    padding: 0 1rem;
+}
 
 
 /************************* Footer **************************/
+
+.foottitle {
+    font-family: 'Amaranth', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 2.2rem;
+}
+
+.foottitle:hover {
+    text-decoration: none;
+    color: #332D2D;
+}
 
 .footer-anchor {
     color: white;
@@ -302,14 +329,14 @@ hr {
     font-size: 14px;
     line-height: 7px;
     text-align: center;
-    color: #343a40;
+    color: #050505;
     border: none;
     background: #ffffff;
     transition: all 0.35s ease-in-out;
 }
 
 .social a i:hover {
-    background: #343a40;
+    background: #050505;
     color: #fff;
 }
 

@@ -5,12 +5,13 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Amaranth:700&display=swap" rel="stylesheet">
 	</head>
     <body>   
 	<nav class="navbar navbar-expand-lg navbar-custom">
 		<a class="navbar-brand" href="{% url 'home' %}"><img
-                        src="{% static 'img/goodbeanlogo.png' %}" alt="goodbean logo"></a></a>
+                        src="{% static 'img/logo.png' %}" alt="goodbean logo"></a></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -128,8 +129,7 @@
         </div>
         <div class="row footer">
             <div class="col-md-6 mb-2 d-flex justify-content-center justify-content-md-start">
-                <a class=" text-dark font-weight-bold font-italic" href="#"><img class="pl-2 mt-3"
-                        src="{% static 'img/goodbeanlogo.png' %}" alt="goodbean logo"></a>
+                <a class="m-2 foottitle" href="#">Goodbean</a>
             </div>
             <div class="col-md-6">
                 <div class="row d-flex justify-content-around social">
