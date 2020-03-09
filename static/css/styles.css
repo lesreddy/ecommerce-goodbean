@@ -207,6 +207,33 @@ hr {
     height: 20em;
 }
 
+.buttonproduct {
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #daa317;
+    border: 2px #daa317 solid;
+    border-radius: 4px;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+    -o-transition: 0.25s ease-in;
+    -ms-transition: 0.25s ease-in;
+    -moz-transition: 0.25s ease-in;
+    -webkit-transition: 0.25s ease-in;
+}
+
+.buttonproduct:hover {
+  color: white;
+  background: #daa317;
+  border: 2px #daa317 solid;
+  text-decoration: none;
+}
 
 
 /************************* Cart **************************/
@@ -216,8 +243,9 @@ hr {
 }
 
 .bordered {
-    border: 2px solid black;
-
+    background: white;
+    padding: .5rem;
+    box-shadow: 3px 3px 5px 1px #ccc;
 }
 /************************* Navbar **************************/
 
