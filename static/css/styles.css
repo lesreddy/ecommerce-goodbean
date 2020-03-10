@@ -21,13 +21,16 @@ body {
 }
 
 
+/************************* Login Page **************************/
 
 .cform {
-    width: 50%;
+    width: 100%;
 } 
 
-
-
+.loginbox {
+    width: 25rem;
+    height: 22rem;
+}
 
 .icon-bar {
     background-color: #fff;
@@ -205,6 +208,22 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     height: 20em;
+}
+
+.productrow {
+    position: relative;
+    height: 90%;
+    overflow: auto;
+}
+
+.productbg {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: 0.08s ease-in;
+}
+
+.productbg:hover {
+    background-color: #fcde95
 }
 
 .buttonproduct {

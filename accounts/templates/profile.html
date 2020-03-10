@@ -6,8 +6,8 @@
 
 {% block content %}
 
-<section id="body" style="width: 100%; height: 100%;" class="d-flex align-content-center justify-content-center">
-	<div class="row d-flex align-content-center justify-content-around m-3">
+<section id="body" style="width: 100%; height: 75vh;" class="d-flex align-content-center justify-content-center bg-light">
+	<div class="row productrow bordered d-flex align-content-center justify-content-around m-3">
 		<div class="col-lg-3 d-flex justify-content-around">
 			<div class="card border-0" style="width: 13rem;">
 				<img class="avatar card-img-top" src="/static/{{ 'img/gbavatar.png' }}" alt="profile avatar">
@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="col-lg-3">
-			<div class="row align-self-center d-flex bg-light p-3 rounded border border-dark mb-3">
+			<div class="row productbg align-self-center d-flex p-3 rounded border border-dark mb-3">
                 <div class="col-6 text-center">
 					<img class="rounded" src="/static/{{ 'img/openbox.png' }}" alt="order-image" style="width: 7rem;">
 				</div>
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row offset-3 d-flex bg-light p-3 rounded border border-dark mb-3">
+			<div class="row productbg offset-3 d-flex p-3 rounded border border-dark mb-3">
 				<div class="col-6 text-center">
 					<img class="rounded" src="/static/{{ 'img/lock.png' }}" alt="order-image" style="width: 7rem;">
 				</div>
@@ -45,7 +45,7 @@
 			</div>
         </div>
 		<div class="col-lg-3 mb-2">
-            <div class="row d-flex bg-light p-3 rounded border border-dark mb-3">
+            <div class="row productbg d-flex p-3 rounded border border-dark mb-3">
 				<div class="col-6 text-center">
 					<img class="avatar rounded" src="/static/{{ 'img/cardpayment.png' }}" alt="order-image" style="width: 7rem;">
 				</div>
@@ -58,7 +58,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row d-flex bg-light p-3 rounded border border-dark mb-1">
+			<div class="row productbg d-flex p-3 rounded border border-dark mb-1">
 				<div class="col-6 text-center">
 					<img class="rounded" src="/static/{{ 'img/droppin.png' }}" alt="order-image" style="width: 7rem;">
 				</div>
