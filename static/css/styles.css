@@ -32,6 +32,19 @@ body {
     height: 22rem;
 }
 
+/************************* Registration Page **************************/
+
+.regboxrow {
+    min-width: 50%;
+    margin: 8rem 0rem;
+}
+
+.regboxcol {
+    height: 100%;
+    min-width: 50%;
+}
+
+
 .icon-bar {
     background-color: #fff;
 }
@@ -208,6 +221,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     height: 20em;
+    border-radius: 0px;
 }
 
 .productrow {
@@ -313,7 +327,7 @@ hr {
     background-color:white;
 }
 .navbar {
-    padding: 0 1rem;
+    padding: 0.25rem 1rem;
 }
 
 /* Set the border color for Toggler and Toggler Icon*/ 
@@ -341,6 +355,14 @@ hr {
 
 
 /************************* Footer **************************/
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clear: both;
+}
 
 .foottitle {
     font-family: 'Amaranth', sans-serif;
