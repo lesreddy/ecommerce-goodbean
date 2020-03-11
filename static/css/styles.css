@@ -20,6 +20,15 @@ body {
     height: 100%;
 }
 
+.fontstyle2 {
+    color: black;
+}
+
+.fontstyle1 {
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.20rem;
+}
 
 /************************* Login Page **************************/
 
@@ -120,6 +129,8 @@ caption p {
 h2,h4 {
     color: white;
 }
+
+
 
 hr {
     background: white;
