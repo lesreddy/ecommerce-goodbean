@@ -6,6 +6,9 @@ def home(request):
     """A view that renders the home page"""
     return render(request, "home.html")
 
+def contact(request):
+    """ return the contact.html page """
+    return render(request, "contact.html")
 
 def all_products(request):
     products = Product.objects.all()
