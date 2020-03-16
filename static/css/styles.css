@@ -280,7 +280,94 @@ hr {
   border: 2px #daa317 solid;
   text-decoration: none;
 }
+/****************************** About Page ******************************** */
 
+#aboutjumbo {
+  background: url("/static/img/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+  border-radius: 0;
+}
+
+
+#brazilbg {
+  background: rgb(45, 101, 57, 0.8);
+}
+
+#ethiopiabg {
+  background: rgba(144, 22, 22, 0.8);
+}
+
+#costabg {
+  background: rgba(2, 17, 74, 0.8);
+}
+
+
+#costa-wrapper {
+  width: 100%;
+  height: 25rem;
+  background: url("/static/img/costa-rica.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#brazil-wrapper {
+  width: 100%;
+  height: 25rem;
+  background: url("/static/img/brazil-map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+#ethiopia-wrapper {
+  width: 100%;
+  height: 25rem;
+  background: url("/static/img/ethiopia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.brazil-wrapper {
+  background: rgb(45, 101, 57, 0.8);
+  width: 60%;
+  height: 60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ethiopia-wrapper {
+  background: rgba(144, 22, 22, 0.8);
+  width: 60%;
+  height: 60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.costa-wrapper {
+  background: rgba(2, 17, 74, 0.8);
+  width: 60%;
+  height: 60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.buynow { 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
 /************************* Cart **************************/
 
