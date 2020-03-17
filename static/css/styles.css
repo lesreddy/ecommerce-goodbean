@@ -367,6 +367,25 @@ hr {
 .buynow { 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  background: #daa317;
+  color: white;
+  border: 2px #daa317 solid;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: 0.25s ease-in;
+  -o-transition: 0.25s ease-in;
+  -ms-transition: 0.25s ease-in;
+  -moz-transition: 0.25s ease-in;
+  -webkit-transition: 0.25s ease-in;
+  border-top: none;
+}
+
+.buynow:hover {
+    background: #d2a83d;
+    border: 2px #d2a83d solid;
+    color: wheat;
+    text-decoration: none;
+    border-top: none;
 }
 
 /************************* Cart **************************/
