@@ -1,11 +1,26 @@
 {% extends 'base.html' %}
 
+{% load bootstrap_tags %}
+
 {% load static from staticfiles %}
 
 {% block content %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p}}
-    <button type="submit">Send</button>
-</form>
+
+
+<section id="contactlanding" class="d-flex align-content-center justify-content-center">
+	<div class="row m-2 align-content-center justify-content-around">
+		<div class="rounded pb-3 contact">
+			<div class="px-5 container">
+                <h1 class="subheading text-center text-uppercase">Get in Touch...</h1>
+				<form method="post">
+                {% csrf_token %}
+                {{ form | as_bootstrap }}
+                <button class="btn btn-block btn-warning" type="submit">Send</button>
+                </form>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
 {% endblock %}

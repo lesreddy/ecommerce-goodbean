@@ -20,7 +20,10 @@ body {
     height: 100%;
 }
 
-
+.subheading {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 3rem;
+}
 
 .fontstyle2 {
     color: black;
@@ -398,6 +401,7 @@ hr {
     padding: .5rem;
     box-shadow: 3px 3px 5px 1px #ccc;
 }
+
 /************************* Navbar **************************/
 
 
@@ -470,6 +474,26 @@ hr {
 .navbar-toggler-icon {
     background-size: auto;
 }
+
+/********************* Contact Page *************************/
+
+#contactlanding {
+    background: url("/static/img/coffee beans on table.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vh;
+}
+
+.contact {
+    min-width: 100%;
+    margin: 2rem;
+    background: rgba(248, 249, 250, 0.8);
+    
+    
+}
+
+
 
 
 /************************* Footer **************************/
