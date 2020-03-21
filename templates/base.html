@@ -80,7 +80,7 @@
                             <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="">About</a></li>
                             <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="">Contact</a>
                             </li>
-                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="">Terms and
+                            <li class="footer-wrap border-0 list-group-item"><a data-toggle="modal" data-target="#termsandcons" class="footer-anchor" href="">Terms and
                                     Conditions</a></li>
                             <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="">Privacy</a>
                             </li>
@@ -140,6 +140,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal for Terms and Conditions -->
+
+    <div class="modal fade" id="termsandcons" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Terms and conditions of Purchase
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
     <script src="{% static 'js/goodbean.js' %}"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>

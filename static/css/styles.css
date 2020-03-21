@@ -485,6 +485,10 @@ hr {
     height: 130vh;
 }
 
+#div_id_last_name {
+    color: white;
+}
+
 .contact {
     min-width: 100%;
     margin: 2rem;
