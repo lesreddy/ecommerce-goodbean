@@ -52,7 +52,7 @@
 			</ul>
             <form  action="{% url 'search' %}" method="get" class="form-inline d-flex my-2 my-lg-0" >
                     <input class="form-control rounded-0 mr-0" name="q" type="search" placeholder="Product Search" aria-label="Search">
-                    <button type="search" class="btn btn-light btn-sm rounded-0">Search</button>
+                    <button type="search" class="btn btn-warning btn-sm rounded-0">Search</button>
             </form>
 		</div>
 	</nav>
@@ -77,8 +77,8 @@
                     <div class="container border-top">
                         <h5 class="text-uppercase text-warning py-3">Links</h5>
                         <ul class="list-group footer-wrap">
-                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="">About</a></li>
-                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="">Contact</a>
+                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="{% url 'about' %}">About</a></li>
+                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="{% url 'contact' %}">Contact</a>
                             </li>
                             <li class="footer-wrap border-0 list-group-item"><a data-toggle="modal" data-target="#termsandcons" class="footer-anchor" href="">Terms and
                                     Conditions</a></li>

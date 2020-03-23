@@ -20,6 +20,10 @@ body {
     height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .subheading {
     font-family: 'Amaranth', sans-serif;
     font-size: 3rem;
@@ -487,6 +491,15 @@ hr {
 
 #div_id_last_name, #div_id_first_name, #div_id_email, #div_id_message {
     color: white;
+}
+
+#div_id_message div textarea {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#div_id_message {
+    margin-bottom: 0px;
 }
 
 
