@@ -485,16 +485,16 @@ hr {
     height: 130vh;
 }
 
-#div_id_last_name {
+#div_id_last_name, #div_id_first_name, #div_id_email, #div_id_message {
     color: white;
 }
+
+
 
 .contact {
     min-width: 100%;
     margin: 2rem;
-    background: rgba(248, 249, 250, 0.8);
-    
-    
+    background: rgba(7, 13, 19, 0.8);   
 }
 
 
