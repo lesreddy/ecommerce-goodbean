@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from .forms import ContactForm
+from django.contrib import messages
 
 def home(request):
     """A view that renders the home page"""
@@ -21,6 +22,8 @@ def contact(request):
 
         if form.is_valid():
             form.save()
+            messages.success(request, "Thankyou, we will get back to you!")
+            return redirect(reverse('contact'))
     
     else:
         form = ContactForm()
