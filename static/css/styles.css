@@ -192,6 +192,7 @@ hr {
   color: white;
   background: #daa317;
   border: 2px #daa317 solid;
+  text-decoration: none;
 }
 
 /* Below strikethrough animation referenced from https://codepen.io/tsimenis/pen/BKdENX */
