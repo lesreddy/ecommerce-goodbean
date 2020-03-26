@@ -14,9 +14,9 @@
 
 {% block content %}
 <section class="container-fluid">
-	<div class="row d-flex">
+	<div class="row p-4 d-flex">
 		{% for item in cart_items|slice:":1" %}
-		<div class="col-sm-4 mt-2 panel-body border border-dark">
+		<div class="col-sm-4 mt-2 panel-body bordered">
 			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')">
 			</div>
 		
@@ -96,8 +96,8 @@
 		</div>
 	</div>
 	
-	<div class="row d-flex justify-content-center">
-    <div class="col">
+	<div class="row p-4 d-flex justify-content-center">
+    <div class="col contact">
 		<form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
 			<legend>Payment Details</legend>
 	
