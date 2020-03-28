@@ -47,7 +47,11 @@ html {
 
 .loginbox {
     width: 25rem;
-    height: 22rem;
+    height: 28rem;
+}
+
+#div_id_username, #div_id_password {
+    color: white;
 }
 
 /************************* Registration Page **************************/
@@ -62,6 +66,9 @@ html {
     min-width: 50%;
 }
 
+#div_id_password1, #div_id_password2 {
+    color: white;
+}
 
 .icon-bar {
     background-color: #fff;
