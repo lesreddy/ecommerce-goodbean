@@ -13,7 +13,7 @@
 {% endblock head_js %}
 
 {% block content %}
-<section class="container-fluid">
+<section class="container-fluid bg-light">
 	<div class="row p-4 d-flex">
 		{% for item in cart_items|slice:":1" %}
 		<div class="col-sm-4 mt-2 panel-body bordered">
@@ -99,24 +99,30 @@
 	<div class="row p-4 d-flex justify-content-center">
     <div class="col contact">
 		<form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-			<legend>Payment Details</legend>
+			
+            <legend class="offset-md-3 col-md-6">Payment Details</legend>
 	
 			<div id="credit-card-errors" style="display: none;">
 				<div id="alert-message block-message error" id="stripe-error-message"></div>
 			</div>
-	
-			<div class="form-group col-md-6">
-				{{ order_form | as_bootstrap }}
+			<div class="row">
+                <div class="col-md-6">
+				<div class="form-group">
+					{{ order_form | as_bootstrap }}
+				</div>
+                </div>
+                <div class="col-md-6">
+				<div class="form-group">
+					{{ payment_form | as_bootstrap }}
+				</div>
+                 </div>
+				{% csrf_token %}
+				<div>
+                <div class="form-group pl-3">
+					<input class=" btn btn-warning rounded-1 buynow" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+				</div>
+               
 			</div>
-	
-			<div class="form-group col-md-6">
-				{{ payment_form | as_bootstrap }}
-			</div>
-	
-			{% csrf_token %}
-			<div class="form-group col-md-12">
-				<input class=" btn btn-warning" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
-	        </div>
 		</form>
 	</div>
     </div>

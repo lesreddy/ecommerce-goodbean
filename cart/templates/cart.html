@@ -4,9 +4,9 @@
 
 {% block content %}
 <section>
-    <div class="px-4 px-lg-0">
+    <div class="bg-light px-4 px-lg-0">
         <div class="py-5 d-flex justify-content-center">
-            <h1 class="display-4"><strong>Review Your Order</strong></h1>
+            <h1 class="display-4 subheading"><strong>Review Your Order</strong></h1>
         </div>
 
         <div class="pb-5 d-flex justify-content-center">
@@ -68,7 +68,7 @@
                                     <h5 class="font-weight-bold">€{{ total }}</h5>
                                 </li>
                             </ul>
-                            <a href="{% url 'checkout' %}" class="btn btn-warning rounded-pill py-2 btn-block font-weight-bold">Proceed to
+                            <a href="{% url 'checkout' %}" class="btn btn-warning rounded-pill py-2 btn-block font-weight-bold buynow">Proceed to
 								checkout</a>
                             
                         </div>
