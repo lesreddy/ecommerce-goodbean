@@ -51,8 +51,8 @@
                 </li>
 			</ul>
             <form  action="{% url 'search' %}" method="get" class="form-inline d-flex my-2 my-lg-0" >
-                    <input class="form-control gbnavlinks border-1 border-dark rounded-0 mr-0" name="q" type="search" placeholder="Product Search" aria-label="Search">
-                    <button type="search" class="btn btn-warning btn-sm rounded-0 buynow text-white-50 font-weight-normal">Search</button>
+                    <input class="form-control gbnavlinks text-capitalize border-1 border-dark rounded-0 mr-0" name="q" type="search" placeholder="Product Search" aria-label="Search">
+                    <button type="search" class="gbnavlinks btn btn-warning btn-sm rounded-0 buynow text-white-50 font-weight-normal">Search</button>
             </form>
 		</div>
 	</nav>
@@ -77,12 +77,12 @@
                     <div class="container border-top">
                         <h5 class="text-uppercase text-warning py-3">Links</h5>
                         <ul class="list-group footer-wrap">
-                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="{% url 'about' %}">About</a></li>
-                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor" href="{% url 'contact' %}">Contact</a>
+                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor gbnavlinks" href="{% url 'about' %}">About</a></li>
+                            <li class="footer-wrap border-0 list-group-item"><a class="footer-anchor gbnavlinks" href="{% url 'contact' %}">Contact</a>
                             </li>
-                            <li class="footer-wrap border-0 list-group-item"><a data-toggle="modal" data-target="#termsandcons" class="footer-anchor" href="">Terms and
+                            <li class="footer-wrap border-0 list-group-item"><a data-toggle="modal" data-target="#termsandcons" class="footer-anchor gbnavlinks" href="">Terms and
                                     Conditions</a></li>
-                            <li class="footer-wrap border-0 list-group-item"><a data-toggle="modal" data-target="#privacy" class="footer-anchor" href="">Privacy</a>
+                            <li class="footer-wrap border-0 list-group-item"><a data-toggle="modal" data-target="#privacy" class="footer-anchor gbnavlinks" href="">Privacy</a>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +91,7 @@
                     <div class="container border-top">
                         <h5 class="text-uppercase text-warning py-3">Find Us</h5>
                         <div id="map"></div>
-                    <h5 class="pt-3 text-white"><span class="pr-2"><i class="fas fa-map-marker-alt"></i></span>
+                    <h5 class="pt-3 text-white gbnavlinks"><span class="pr-2"><i class="fas fa-map-marker-alt"></i></span>
                         7 Sarsfield Street,
                         Limerick, Ireland</h5>
                     </div>
@@ -116,11 +116,11 @@
                     <div class="container border-top">
                         <h5 class="text-uppercase text-warning py-3">Get in Touch</h5>
                         <div class="pb-2">
-                            <a class="footer-anchor" href="{% url 'contact' %}"><span><i class="far fa-envelope"></i></span>
+                            <a class="footer-anchor gbnavlinks text-lowercase" href="{% url 'contact' %}"><span><i class="far fa-envelope"></i></span>
                                 goodbean@enquiries.com</a>
                         </div>
                         <div>
-                            <a class="footer-anchor" href="{% url 'contact' %}"><span><i class="fas fa-phone-square"></i></span> +353 61
+                            <a class="footer-anchor gbnavlinks" href="{% url 'contact' %}"><span><i class="fas fa-phone-square"></i></span> +353 61
                                 811 1000</a>
                         </div>
                     </div>

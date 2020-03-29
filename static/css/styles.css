@@ -244,13 +244,16 @@ hr {
 /************************* Products Page **************************/
 
 .productlanding {
-    background: url("/static/img/coffewithbeans.jpg");
+    background: url("/static/img/coffeewithbeans2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20em;
     border-radius: 0px;
+    background-attachment: fixed;
+    height: 70%;
 }
+
+
 
 .productrow {
     position: relative;
@@ -272,7 +275,7 @@ hr {
     height: 45px;
     width: 150px;
     margin: 10px 7px;
-    padding: 5px 5px;
+    padding: 10px 15px;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2px;
@@ -302,8 +305,9 @@ hr {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 20rem;
+  height: 70%;
   border-radius: 0;
+  background-attachment: fixed;
 }
 
 
@@ -385,6 +389,7 @@ hr {
   color: white;
   border: 2px #daa317 solid;
   letter-spacing: 2px;
+  text-transform: uppercase;
   font-weight: 700;
   transition: 0.25s ease-in;
   -o-transition: 0.25s ease-in;
