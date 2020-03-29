@@ -25,7 +25,7 @@
 						</p>
 					</div>
 					<p>
-						<a class="buttonproduct" href="#" role="button">More Info</a>
+						<a class="buttonproduct" href="{% url 'about' %}" role="button">More Info</a>
 					</p>
 					{% for product in products|slice:":1" %}
 					<div class="panel-body border-0">
@@ -86,7 +86,7 @@
 						</p>
 					</div>
 					<p>
-						<a class="buttonproduct" href="#" role="button">More Info</a>
+						<a class="buttonproduct" href="{% url 'about' %}" role="button">More Info</a>
 					</p>
 					{% for product in products|slice:"1:2" %}
 					<div class="panel-body border-0">
@@ -147,7 +147,7 @@
 					</p>
 					</div>
 					<p>
-						<a class="buttonproduct" href="#" role="button">More Info</a>
+						<a class="buttonproduct" href="{% url 'about' %}" role="button">More Info</a>
 					</p>
 					{% for product in products|slice:"2:3" %}
 					<div class="panel-body border-0">
