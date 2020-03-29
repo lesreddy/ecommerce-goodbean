@@ -265,7 +265,7 @@ hr {
 }
 
 .productbg:hover {
-    background-color: #fcde95
+    background-color: #f3c85b;
 }
 
 .buttonproduct {
@@ -424,6 +424,11 @@ hr {
 
 /************************* Navbar **************************/
 
+.gbnavlinks {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
 
 /* change the background color */
 .navbar-custom {
