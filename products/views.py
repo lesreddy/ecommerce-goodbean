@@ -9,3 +9,8 @@ def all_products(request):
 def about(request):
     """ return the about.html page """
     return render(request, "about.html")
+
+def searchresults(request):
+    """ return the product search page """
+    products = Product.objects.all()
+    return render(request, "searchresults.html")

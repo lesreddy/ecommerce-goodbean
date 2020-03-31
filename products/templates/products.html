@@ -7,27 +7,11 @@
 </div>
 <section class="bg-light">
 	<div class="py-5 bg-none d-flex flex-column justify-content-center">
-		<div class="row">
+		<div class="row pb-3">
+            {% for product in products|slice:":1" %}
 			<div class="col-lg-4 text-center">
 				<div class="border-dark bordered">
-					<img
-			              class="rounded-circle"
-			              src="/static/img/green.png"
-			              alt="Liberica Range"
-			              width="140"
-			              height="140"
-			            />
-					<h4 class="fontstyle2">Brazilian Blend</h4>
-					<div class="my-1">
-                    <p class="text-center font-italic"><span class="fontstyle1">Flavour Notes</span></p>
-					<p class="mb-4">
-							Sweet clementine acidity with a milk chocolate body and roasted hazelnut finish.
-						</p>
-					</div>
-					<p>
-						<a class="buttonproduct" href="{% url 'about' %}" role="button">More Info</a>
-					</p>
-					{% for product in products|slice:":1" %}
+					
 					<div class="panel-body border-0">
 						<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
 						</div>
@@ -68,27 +52,10 @@
 				</div>
 				{% endfor %}
 			</div>
-
+            {% for product in products|slice:"1:2" %}
 			<div class="col-lg-4 text-center">
 				<div class="border-dark bordered">
-					<img
-			              class="rounded-circle"
-			              src="/static/img/red.png"
-			              alt="Arabica Range"
-			              width="140"
-			              height="140"
-			            />
-					<h4 class="fontstyle2">Ethiopian Blend</h4>
-					<div class="my-1">
-                    <p class="text-center font-italic"><span class="fontstyle1">Flavour Notes</span></p>
-					<p class="mb-4">
-							Blueberries and tangerine with cacao nibs and bright red current acidity.
-						</p>
-					</div>
-					<p>
-						<a class="buttonproduct" href="{% url 'about' %}" role="button">More Info</a>
-					</p>
-					{% for product in products|slice:"1:2" %}
+					
 					<div class="panel-body border-0">
 						<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
 						</div>
@@ -129,27 +96,144 @@
 					{% endfor %}
 				</div>
 			</div>
-
+            {% for product in products|slice:"2:3" %}
 			<div class="col-lg-4 text-center">
 				<div class="border-dark bordered">
-					<img
-			              class="rounded-circle"
-			              src="/static/img/blue.png"
-			              alt="Generic placeholder image"
-			              width="140"
-			              height="140"
-			            />
-					<h4 class="fontstyle2">Costa Rican Blend</h4>
-					<div class="my-1">
-                    <p class="text-center font-italic"><span class="fontstyle1">Flavour Notes</span></p>
-					<p class="mb-4">
-						Blueberries and tangerine with cacao nibs and a bright red currant acidity.
-					</p>
+					
+					<div class="panel-body border-0">
+						<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+						</div>
+
+						<h3>{{ product.name }}</h3>
+						<p class="product-description">{{ product.description }}</p>
+						<p class="font-weight-bold">€{{ product.price }}</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">Strong</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">Medium</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">Mild</label>
+						</div>
+						<div class="d-flex justify-content-center">
+							<form class="col-md-5 mt-3 text-center" method="post"
+								action="{% url 'add_to_cart' product.id %}">
+								{% csrf_token %}
+								<div class="input-group">
+									<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+									<span class="input-group-btn">
+								<button class="btn btn-secondary bg-dark" type="submit">Add</button>
+								</span>
+								</div>
+							</form>
+						</div>
+						<div class="d-flex justify-content-center my-3">
+							<a href="{% url 'view_cart' %}"
+								class="col-md-5 btn buynow rounded-pill py-2 font-weight-bold">View
+								Cart</a>
+						</div>
 					</div>
-					<p>
-						<a class="buttonproduct" href="{% url 'about' %}" role="button">More Info</a>
-					</p>
-					{% for product in products|slice:"2:3" %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+        <div class="row">
+            {% for product in products|slice:"3:4" %}
+			<div class="col-lg-4 text-center">
+				<div class="border-dark bordered">
+					
+					<div class="panel-body border-0">
+						<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+						</div>
+
+						<h3>{{ product.name }}</h3>
+						<p class="product-description">{{ product.description }}</p>
+						<p class="font-weight-bold">€{{ product.price }}</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">Strong</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">Medium</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">Mild</label>
+						</div>
+						<div class="d-flex justify-content-center">
+							<form class="col-md-5 mt-3 text-center" method="post"
+								action="{% url 'add_to_cart' product.id %}">
+								{% csrf_token %}
+								<div class="input-group">
+									<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+									<span class="input-group-btn">
+									<button class="btn btn-secondary bg-dark" type="submit">Add</button>
+									</span>
+								</div>
+							</form>
+						</div>
+						<div class="d-flex justify-content-center my-3">
+							<a href="{% url 'view_cart' %}"
+								class="col-md-5 btn buynow rounded-pill py-2 font-weight-bold">View
+								Cart</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+            {% for product in products|slice:"4:5" %}
+			<div class="col-lg-4 text-center">
+				<div class="border-dark bordered">
+					
+					<div class="panel-body border-0">
+						<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+						</div>
+
+						<h3>{{ product.name }}</h3>
+						<p class="product-description">{{ product.description }}</p>
+						<p class="font-weight-bold">€{{ product.price }}</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">Strong</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">Medium</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">Mild</label>
+						</div>
+						<div class="d-flex justify-content-center">
+							<form class="col-md-5 mt-3 text-center" method="post"
+								action="{% url 'add_to_cart' product.id %}">
+								{% csrf_token %}
+								<div class="input-group">
+									<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+									<span class="input-group-btn">
+								<button class="btn btn-secondary bg-dark" type="submit">Add</button>
+								</span>
+								</div>
+							</form>
+						</div>
+						<div class="d-flex justify-content-center my-3">
+							<a href="{% url 'view_cart' %}"
+								class="col-md-5 btn buynow rounded-pill py-2 font-weight-bold">View
+								Cart</a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+            {% for product in products|slice:"5:6" %}
+			<div class="col-lg-4 text-center">
+				<div class="border-dark bordered">
+					
 					<div class="panel-body border-0">
 						<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
 						</div>
@@ -192,7 +276,6 @@
 			</div>
 		</div>
 	</div>
-<div class="mb-0 jumbotron productlanding">
-</div>
 </section>
+<div class="mb-0 jumbotron productlanding"></div>
 {% endblock %}
