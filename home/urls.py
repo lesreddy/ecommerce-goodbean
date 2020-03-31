@@ -1,6 +1,5 @@
 from django.conf.urls import url, include
-from .views import home
-from .views import contact
+from .views import home, contact
 
 urlpatterns = [
     url(r'^$', home, name='home'),
