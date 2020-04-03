@@ -7,14 +7,18 @@
 </div>
 <section class="bg-light">
 	<div class="row justify-content-center">
-		{% for product in products %}
+		{% for review in reviews|slice:":1" %}
         <div class="col-sm-4">
-			<h1>{{ product.name }}</h1>
-			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
-			</div>
+			<h1>{{ review.product }}</h1>
+            <h1>{{ review.user }}</h2>
 		</div>
         {% endfor %}
 	</div>
 </section>
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="{% url 'new_review' %}">New Review</a></li>
+</ul>
 <div class="mb-0 jumbotron productlanding"></div>
+
+
 {% endblock %}

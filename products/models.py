@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
@@ -15,8 +14,8 @@ class Product(models.Model):
         return self.name
 
 class Review(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product)
+    user = models.ForeignKey(User)
     comment = models.TextField(max_length=500)
     rating = models.FloatField(default=0)
 
