@@ -1,0 +1,30 @@
+  
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-2 col-sm-3 text-center">
+            {% for product in products %}
+            <a class="story-img" href="#">
+                <img src="/media/img/profile.jpg" class="img-circle">
+            </a>
+            {% endfor %}
+            {% for review in reviews %}
+            <p><span class="boldtext">Author:</span> {{ review.user }}</p>
+            
+        </div>
+        <div class="col-sm-10 col-md-9">
+            
+            <h3>{{ review.product }}</h3>
+            
+            <div class="row">
+                <div class="col-xs-9">
+                    <p>{{ review.comment }}</p>
+                    {% endfor %}
+                    <a href="{% url 'reviews' %}" class="btn btn-default">Back to Reviews</a>
+                    <a href="{% url 'edit_review' post.id %}" class="btn btn-default">Edit Review</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
