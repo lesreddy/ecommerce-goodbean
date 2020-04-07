@@ -24,6 +24,7 @@ from checkout import urls as urls_checkout
 from products.views import all_products, about
 from home import urls as urls_home
 from review import urls as urls_review
+from review.views import reviewhome
 from home.views import home, contact
 from django.views import static
 from .settings import MEDIA_ROOT
