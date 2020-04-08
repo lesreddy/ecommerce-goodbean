@@ -536,7 +536,17 @@ hr {
     background: rgba(7, 13, 19, 0.8);   
 }
 
+/************************* Reviews **************************/
 
+.reviewlanding {
+    background: url("/static/img/reviewarea.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-attachment: fixed;
+    height: 70%;
+}
 
 
 /************************* Footer **************************/
