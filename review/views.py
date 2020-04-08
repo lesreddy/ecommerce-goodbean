@@ -7,3 +7,10 @@ def reviewhome(request):
     products = Product.objects.all()
 
     return render(request, 'review_content.html', {"products":products} )
+
+
+def detail(request, pk):
+    ''' A view which renders the specific product selected with more detail'''
+    products = get_object_or_404(Product, pk=pk)
+
+    return render(request, 'review_details.html', {"products":products})
