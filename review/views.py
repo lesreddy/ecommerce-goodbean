@@ -15,7 +15,7 @@ def reviewhome(request):
 
 def detail(request, id):
     ''' A view which renders the specific product selected with more detail'''
-    product = Product.objects.get(id=id) # select * from movie where id=id
+    product = Product.objects.get(id=id) 
     reviews = Review.objects.filter(product=id).order_by("-comment")
 
     context = {
@@ -29,8 +29,6 @@ def detail(request, id):
 def add_review(request, id):
     """
     View for adding reviews via use of the ReviewForm.
-    Utilises checks to ensure that only members can post
-    reviews.
     """
     if request.user.is_authenticated:
         product = Product.objects.get(id=id)
@@ -44,6 +42,9 @@ def add_review(request, id):
                 data.product = product
                 data.save()
                 return redirect("detail", id)
+            else:
+                if not form.is_valid():
+                    return redirect("detail", id)
         else:
             form = ReviewForm()
         return render(request, 'review_details.html', {"form": form})

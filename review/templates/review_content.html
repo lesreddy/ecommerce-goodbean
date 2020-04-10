@@ -7,7 +7,7 @@
 <div class="mb-0 jumbotron reviewlanding">
 </div>
 <div class="container-fluid">
-    <div class="card">
+    <div class="card border-0">
         <div class="card-body">
             <div class="row">
                 {% for product in products %}
@@ -18,7 +18,7 @@
                             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
 						    </div>
                         </div>
-                        <a class="text-center" href="{% url 'detail' product.pk %}">Read More</a>
+                        <div class="justify-content-center d-flex"><a class="buynow rounded-pill p-2 font-weight-bold" href="{% url 'detail' product.pk %}">Read More</a></div>
                     </div>
 
                 </div>
