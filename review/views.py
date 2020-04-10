@@ -1,8 +1,11 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
-from products.models import Product, Review
-from .forms import *
+from django.contrib import auth, messages
+from products.models import Product
+from .models import Review
+from .forms import ReviewForm
+from django.contrib.auth.decorators import login_required
+
 
 def reviewhome(request):
     products = Product.objects.all()
@@ -10,17 +13,27 @@ def reviewhome(request):
     return render(request, 'review_content.html', {"products":products} )
 
 
-def detail(request, pk):
+def detail(request, id):
     ''' A view which renders the specific product selected with more detail'''
-    products = get_object_or_404(Product, pk=pk)
-    reviews = Review.objects.filter(product=pk)
+    product = Product.objects.get(id=id) # select * from movie where id=id
+    reviews = Review.objects.filter(product=id).order_by("-comment")
 
-    return render(request, 'review_details.html', {"products":products})
+    context = {
+        "product": product,
+        "reviews": reviews,
+    }
+
+    return render(request, 'review_details.html', context)
 
 
-def add_review(request, pk):
+def add_review(request, id):
+    """
+    View for adding reviews via use of the ReviewForm.
+    Utilises checks to ensure that only members can post
+    reviews.
+    """
     if request.user.is_authenticated:
-        product = Product.objects.get(pk=pk)
+        product = Product.objects.get(id=id)
         if request.method == "POST":
             form = ReviewForm(request.POST or None)
             if form.is_valid():
@@ -30,9 +43,12 @@ def add_review(request, pk):
                 data.user = request.user
                 data.product = product
                 data.save()
-                return redirect("detail", pk)
+                return redirect("detail", id)
         else:
             form = ReviewForm()
         return render(request, 'review_details.html', {"form": form})
     else:
-        return redirect("accounts:login")
+        return redirect(reverse('login'))
+
+
+   

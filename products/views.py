@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Review
+from .models import Product
 from django.utils import timezone
 
 # Create your views here.
