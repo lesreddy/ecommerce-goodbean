@@ -250,7 +250,7 @@ hr {
     background-repeat: no-repeat;
     border-radius: 0px;
     background-attachment: fixed;
-    height: 70%;
+    height: 50%;
 }
 
 
@@ -301,11 +301,11 @@ hr {
 /****************************** About Page ******************************** */
 
 #aboutjumbo {
-  background: url("/static/img/landing.jpg");
+  background: url("/static/img/landing2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70%;
+  height: 50%;
   border-radius: 0;
   background-attachment: fixed;
 }
@@ -545,9 +545,18 @@ hr {
     background-repeat: no-repeat;
     border-radius: 0px;
     background-attachment: fixed;
-    height: 70%;
+    height: 50%;
 }
 
+.reviewlanding2 {
+    background: url("/static/img/reviewarea.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    background-attachment: fixed;
+    height: 10%;
+}
 
 /************************* Footer **************************/
 

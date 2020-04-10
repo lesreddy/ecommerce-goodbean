@@ -1,13 +1,13 @@
-from django.contrib.auth.models import User
-from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import auth, messages
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
 from products.models import Product
 from .models import Review
 from .forms import ReviewForm
-from django.contrib.auth.decorators import login_required
+
 
 
 def reviewhome(request):
+    ''' A view to render the home page of the review section showing all products'''
     products = Product.objects.all()
 
     return render(request, 'review_content.html', {"products":products} )
@@ -49,6 +49,7 @@ def add_review(request, id):
             form = ReviewForm()
         return render(request, 'review_details.html', {"form": form})
     else:
+        messages.info(request, "You need to log in to post a review!")
         return redirect(reverse('login'))
 
 
