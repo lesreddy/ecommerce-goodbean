@@ -2,13 +2,18 @@
 <html>
 	<head>
 		<title>{% block page_title %}{% endblock %} </title>
+        <!-- Bootstrap CDN  -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- CSS Style Sheet -->
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+        <!-- Font Awesome  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- Google Maps API -->
         <link href="https://fonts.googleapis.com/css?family=Amaranth:700&display=swap" rel="stylesheet">
 	</head>
     <body>   
+    <!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-custom">
 		<a class="navbar-brand" href="{% url 'home' %}"><img
                         src="{% static 'img/logo.png' %}" alt="goodbean logo"></a></a>
@@ -29,28 +34,30 @@
                 <li class="nav-item pr-3">
 					<a class="nav-link gbnavlinks" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
 				</li>
-			</ul>            
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle gbnavlinks" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-						aria-expanded="false">My Account</a>
-					<div class="dropdown-menu">
-                    {% if user.is_authenticated %}
-                        <a class="dropdown-item gbnavlinks" href="{% url 'profile' %}">Profile</a>
-						<a class="dropdown-item gbnavlinks" href="{% url 'logout' %}">Logout</a>
-                    {% else %}
-                        <a class="dropdown-item gbnavlinks" href="{% url 'login' %}">Login</a>
-						<a class="dropdown-item gbnavlinks" href="{% url 'registration' %}">Register</a>
-                    {% endif %}
-					</div>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item pr-3">
+					{% if user.is_authenticated %}
+					<a class="nav-link gbnavlinks" href="{% url 'profile' %}">Profile</a>
                 </li>
+                <li class="nav-item pr-3">
+					<a class="nav-link gbnavlinks" href="{% url 'logout' %}">Logout</a>
+                </li>
+					{% else %}
+                <li class="nav-item pr-3">
+					<a class="nav-link gbnavlinks" href="{% url 'login' %}">Login</a>
+                </li>
+                <li class="nav-item pr-3">
+					<a class="nav-link gbnavlinks" href="{% url 'registration' %}">Create Account</a>
+                </li>
+                    {% endif %}      
                 <li class="nav-item">
-                        <a class="nav-link" href="{% url 'view_cart' %}">
-                            <i class="fas fa-shopping-cart"></i>
-                            {% if product_count > 0 %}
-                            <label class="badge badge-warning">{{ product_count }}</label>
-                            {% endif %}
-                        </a>
+                    <a class="nav-link" href="{% url 'view_cart' %}">
+                        <i class="karticon fas fa-shopping-cart"></i>
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                    </a>
                 </li>
 			</ul>
             <form  action="{% url 'search' %}" method="get" class="form-inline d-flex my-2 my-lg-0" >
@@ -59,7 +66,7 @@
             </form>
 		</div>
 	</nav>
-   
+    <!-- Messages -->
     {% if messages %}
     <ul class="messages" id="messages">
         {% for msg in messages %}
@@ -70,9 +77,14 @@
         </li>
         {% endfor %}
     </ul>
-   
     {% endif %}
-    {% block content %}{% endblock %}
+
+    <!-- Contents rendered from other APP Templates -->
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
     <footer>
         <div class="container-fluid footer-wrap">
             <div class="row">
@@ -191,12 +203,18 @@
     </div>
 
 </div>
+    <!-- JS Link -->
     <script src="{% static 'js/goodbean.js' %}"></script>
+    <!-- JS for Google Map API in footer -->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6etlDYcdgdAEGITZImc88e0HwHz_hzDs&callback=initMap"></script>
+    <!-- JQuery  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Content for JS to run -->
     {% block head_js %}
 	{% endblock head_js %}
     

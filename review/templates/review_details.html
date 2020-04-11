@@ -3,26 +3,40 @@
 {% block content %}
 
 <div class="mb-0 jumbotron reviewlanding"></div>
-<div class="container mt-5">
-    <div class="card border-0">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+<div class="container-fluid mt-5">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')">
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="cardcontentwrapper container-fluid" id="brazilbg">
+				<div class="row p-2 d-flex justify-content-center">
+					<p class="w-100 text-center p-4 aboutheader">
+						<span class="bg-white py-3 px-2 text-uppercase">Most Recent Review</span>
+					</p>
+					{% for review in reviews|slice:"1:2" %}
+                    <p class="text-white text-center aboutfont"><span class="border-bottom border-white">Comment</span></p>
+                    <div class="container-fluid d-flex justify-content-center">
+					    <p class="px-5 text-center aboutfont text-white align-self-center">{{ review.comment }}.</p>
+                    </div>
+				</div>
+				<div class="row p-2">
+					<div class="col-6">
+						<p class="text-white text-center aboutfont"><span class="border-bottom border-white">Name</span>
+						</p>
+						<p class="text-white text-center aboutfont">{{ review.user.username }}</p>
 					</div>
-                </div>
-                <div class="col-md-8">
-                    <h3 class="text-center">{{ product.name }}</h5>
-                    {% for review in reviews|slice:":1" %}
-                    <h5 class="text-center mt-4">Most Recent Review</h5>
-                    <p class="text-center">Rating: {{ review.rating }}</p>
-                    <p class="text-center">Comment: {{ review.comment }}</p>
-                    <p class="text-center">Name: {{ review.user.username }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="col-6 aboutheader">
+						<p class="text-white text-center aboutfont">
+							<span class="border-bottom border-white">Rating</span></p>
+						<p class="text-white text-center aboutfont">{{ review.rating }}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="card border-0">
 	<div class="card-body">
@@ -69,6 +83,7 @@
     </div>
 </div>
 <div class="mb-0 jumbotron reviewlanding"></div>
+
 
 
 {% endblock %}

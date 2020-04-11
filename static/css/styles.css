@@ -407,7 +407,7 @@ hr {
     border-top: none;
 }
 
-/************************* Checkout  **************************/
+/************************* Checkout App/Page  **************************/
 
 #payment-form {
     color: white;
@@ -415,7 +415,7 @@ hr {
 
 
 
-/************************* Cart **************************/
+/************************* Cart App/Page **************************/
 
 .hed1 {
     color: white;
@@ -428,6 +428,14 @@ hr {
 }
 
 /************************* Navbar **************************/
+
+.karticon {
+    color: white;
+}
+
+.karticon:hover {
+    color: grey;
+}
 
 .gbnavlinks {
     text-transform: uppercase;
@@ -625,7 +633,7 @@ footer {
 
 
 .footer {
-  background-image: linear-gradient(#DAA317, #F6CC62);
+  background-image: linear-gradient(#af7d00, #ffc107);
 }
 
 .footer-wrap {

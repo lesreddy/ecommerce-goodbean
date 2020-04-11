@@ -7,6 +7,8 @@ from accounts.forms import UserLoginForm, UserRegistrationForm
 
 # Create your views here.
 
+'''All of the below views were referenced from the to-do tutorial on the code institute Website, they are of not my own making'''
+
 def index(request):
     """Return the index.html file"""
     return render(request, 'index.html')

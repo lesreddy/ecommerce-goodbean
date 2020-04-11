@@ -11,6 +11,8 @@ import stripe
 
 # Create your views here.
 
+'''All of the below views were referenced from the e-commerce tutorial on the code institute Website, they are of not my own making'''
+
 stripe.api_key = settings.STRIPE_SECRET
 
 @login_required()
