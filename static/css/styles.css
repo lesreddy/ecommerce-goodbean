@@ -134,7 +134,7 @@ caption p {
 
 
 .landing {
-    background: url("/static/img/wood.jpg");
+    background: url("../img/wood.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
