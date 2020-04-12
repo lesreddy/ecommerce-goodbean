@@ -57,5 +57,3 @@ def add_review(request, id):
         messages.info(request, "You need to log in to post a review!")
         return redirect(reverse('login'))
 
-
-   

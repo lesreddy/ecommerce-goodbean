@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse
 from .models import Product
-from django.utils import timezone
+from review.models import Review
 
 # Create your views here.
 def all_products(request):
