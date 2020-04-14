@@ -82,7 +82,30 @@ As a visitor to Goodbean I expect:
 9. To access Social Media sites from the main site
 10.  To access the location of the business from the main site.
 
+## Design
 
+Goodbean is selling a premium coffee product so the design choices were based on what creates a premium feel and good colours and fonts associated with coffee.
+
+### Fonts
+
+'Amarand' was chosen for the main heading fonts which appeals covers off a premium, yet stylish feel which also resonates with a coffee feeling
+
+'Open Sans' was chosen for the main secondary font which gives a clear and fresh feel.
+
+### Colours
+
+1. Main Site Colours - Black(#000), White(#111), GoldenRod(#DAA317), Wheat(#F5DEB3)
+
+
+<div align=center>
+<img src="https://i.ibb.co/sKs0LRN/Main-Site-Colours.png" alt="Main-Site-Colours" border="0">
+</div>
+
+2. Product Colours - OxfordBlue(#02114A), SpartanCrimson(#901616), MughalGreen(#2D6539)
+
+<div align=center>
+<img src="https://i.ibb.co/4WVbXzv/productcolours.png" alt="productcolours" border="0" />
+<div>
 
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
