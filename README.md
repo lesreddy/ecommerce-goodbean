@@ -1,9 +1,20 @@
-# Goodbean
 
-An e-commerce website for the Goodbean Coffee Brand
+<p align="center">
+<img src="https://i.ibb.co/k2Vgn7b/Readme-Logo.png" alt="Readme-Logo" href="https://les-goodbean.herokuapp.com/" target="_blank" rel="noopener" alt="Goodbean Logo" aria-label="Goodbean Logo" />
+</p>
 
+<p align="center">
+[Goodbean](https://les-goodbean.herokuapp.com/) is a student Website utilising many recently learnt skills encompassing HTML, CSS, BOOTSTRAP4, JAVASCRIPT(& JQUERY), and PYTHON.  It is builty using the DJANGO Framework and it showcases a mock ecommerce website selling premium coffee beans.  It is the final of 4 projects in for the Diploma in full stack development from Code Institute.
+</p>
 
+<p align="center">
+You can link to the deployed app in Heroku [here](https://les-goodbean.herokuapp.com/)
+</p>
+
+<p align="center">
 ## Table of Contents
+</p>
+
 1. [**UX**](#ux)
     - [Goals](#developer-goals)
     - [User Stories](#user-stories)
