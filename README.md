@@ -101,14 +101,23 @@ Goodbean is selling a premium coffee product so the design choices were based on
 <img src="https://i.ibb.co/sKs0LRN/Main-Site-Colours.png" alt="Main-Site-Colours" border="0">
 </div>
 
+
+
 2. Product Colours - OxfordBlue(#02114A), SpartanCrimson(#901616), MughalGreen(#2D6539)
 
 <div align=center>
 <img src="https://i.ibb.co/4WVbXzv/productcolours.png" alt="productcolours" border="0" />
 <div>
 
+The main site colours were chosen to align with an expected coffee style for the user and also strike a premium look
+
+The product colours were chosen to really draw the attention of the user to them whilst matching in contrast to a premium shade.
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
 
+## Wireframes
 
+1. Mobile wireframes can be found at
+2. Tablet wireframes can be found at
+3. Desktop wireframes can be found at
 
