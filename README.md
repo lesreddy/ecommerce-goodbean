@@ -46,6 +46,15 @@ Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Her
 8. [**Final Notes**](#final-notes)
 
 
+##UX
+
+
+Visitor Goals
+
+
 
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
+
+
+
