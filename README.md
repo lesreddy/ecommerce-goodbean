@@ -5,15 +5,22 @@
 
 <br>
 
-## Introduction
+<p style="text-align: center; font-size: 25px">
+Introduction</p>
 
-[Goodbean](https://les-goodbean.herokuapp.com/) is a student Website utilising many recently learnt skills encompassing HTML, CSS, BOOTSTRAP4, JAVASCRIPT(& JQUERY), and PYTHON.  It is builty using the DJANGO Framework and it showcases a mock ecommerce website selling premium coffee beans.  It is the final of 4 projects in for the Diploma in full stack development trough the coveted Code Institute.
+<p style="text-align: center;">[Goodbean](https://les-goodbean.herokuapp.com/) is a student Website utilising many recently learnt skills encompassing HTML, CSS, BOOTSTRAP4, JAVASCRIPT(& JQUERY), and PYTHON.  It is builty using the DJANGO Framework and it showcases a mock ecommerce website selling premium coffee beans.  It is the final of 4 projects in for the Diploma in full stack development trough the coveted Code Institute. 
+</p>
 
-Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Heroku 
+<p style="text-align: center;">Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Heroku 
+</p>
+
 
 <br>
 
-## Table of Contents
+
+<p style="text-align: center; font-size: 25px">
+Table of Contents
+</p>
 
 1. [**UX**](#ux)
     - [Goals](#developer-goals)
