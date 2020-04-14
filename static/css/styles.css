@@ -556,15 +556,16 @@ hr {
     height: 50%;
 }
 
-.reviewlanding2 {
-    background: url("/static/img/reviewarea.jpg");
+.reviewimg1 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0px;
-    background-attachment: fixed;
-    height: 10%;
+    width: 20rem;
+    height: auto;
 }
+
+
 
 /************************* Footer **************************/
 
