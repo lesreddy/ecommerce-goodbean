@@ -307,8 +307,6 @@ For a Windows Operating System using VSCODE as the IDE.
         "SECRET_KEY": "<enter key here>",
         "STRIPE_PUBLISHABLE": "<enter key here>",
         "STRIPE_SECRET": "<enter key here>",
-        "STRIPE_SUCCESS_URL": "<enter url here>",
-        "STRIPE_CANCEL_URL": "<enter url here>",
         "AWS_ACCESS_KEY_ID": "<enter key here>",
         "AWS_SECRET_ACCESS_KEY": "<enter key here>",
         "AWS_STORAGE_BUCKET_NAME": "<enter bucket name here>",
@@ -338,7 +336,44 @@ For a Windows Operating System using VSCODE as the IDE.
     ```
 13.  To access the admin panel put `/admin` at the end of the url once you have executed the manage.py file. 
 
+## Heroku Deployment
 
+To deploy Goodbean to heroku:
+
+1. Using the terminal command `pip freeze > requirements.txt` create a `requirements.txt` file. 
+
+2. Using the terminal command `echo web: python app.py > Procfile` create a `Procfile`.
+
+3. Using the terminal commands `git add` and `git commit` commit the new requirements and Procfile to Git (or use the source control icon in VSCODE)
+    
+4. Again From the terminal type `git push` to get it accross to GitHub.
+
+5. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) and ensure to give it a related name and set the region to your relevant location.
+
+6. From the heroku dashboard of your new app:
+     -  Click "Deploy" >> "Deployment method" >> (select) "GitHub".
+
+7. Choose the appropriate GitHub repository to complete the Heroku connection.
+
+8. From the app dashboard:
+    - click "Settings" >> "Reveal Config Vars"
+    
+9. Set the following config vars:
+
+| Key | Value |
+--- | ---
+HOSTNAME | `<your heroku app hostname>`
+DATABASE_URL | `<your postgres database url>`
+SECRET_KEY | `<your secret key>`
+STRIPE_PUBLISHABLE | `<your secret key>`
+STRIPE_SECRET | `<your secret key>`
+AWS_ACCESS_KEY_ID | `<your secret key>`
+AWS_SECRET_ACCESS_KEY | `<your secret key>`
+AWS_STORAGE_BUCKET_NAME | `<your AWS S3 bucket name>`
+
+10. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
+
+11. Once the build is complete, click the "View app" button provided.
 
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
