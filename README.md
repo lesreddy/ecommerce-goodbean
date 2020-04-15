@@ -113,7 +113,6 @@ The main site colours were chosen to align with an expected coffee style for the
 
 The product colours were chosen to really draw the attention of the user to them whilst matching in contrast to a premium shade.
 
-[![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
 
 ## Wireframes
 
@@ -121,3 +120,27 @@ The product colours were chosen to really draw the attention of the user to them
 2. Tablet wireframes can be found at
 3. Desktop wireframes can be found at
 
+# Features
+
+## Current Features
+
+1. Consistent Elements Throughout - this includes the navbar, main colour scheme and footer.
+2. Home Landing Page - Sets the tone with a clean premium look which is designed to build value in the goodbean product.
+3. Products Page - Showcases all products in a clean clear premium style design.
+4. Accounts Function - Allows users to create new accounts, log in, register, log out and also has a profile page.
+5. Search Function - Allows users to search for products.
+6. Cart Page - Shows the products the user has selected.
+7. Checkout Page - Shows the products the user has selected and allows user to enter payment details.
+8. Google Maps API in footer - Allows user to click in to see exactly where Goodbean is located.
+9. Parallax scrolling - Implemented on the products, reviews and about page.
+10. User can add their own review on the review page and also see other reviews left by customers on that product.
+
+## Impending Features
+
+1. To get a working rubbish bin icon on the cart page, ie the user clicks on the bin and it removes the product
+2. Create links from the profile page which allow users to edit their login and security details, payment options, address details and to track orders.
+3. Add more products to the site.
+4. 
+
+
+[![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
