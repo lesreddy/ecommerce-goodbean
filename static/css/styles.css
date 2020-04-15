@@ -640,3 +640,11 @@ footer {
 .footer-wrap {
     background-color: black;
 }
+
+/* Media Queries */
+
+@media only screen and (max-device-width: 1366px) {
+  .productlanding {
+    background-attachment: scroll;
+  }
+}
