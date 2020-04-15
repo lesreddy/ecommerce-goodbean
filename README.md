@@ -105,7 +105,7 @@ Goodbean is selling a premium coffee product so the design choices were based on
 
 <div align=center>
 <img src="https://i.ibb.co/4WVbXzv/productcolours.png" alt="productcolours" border="0" />
-<div>
+</div>
 
 The main site colours were chosen to align with an expected coffee style for the user and also strike a premium look
 
