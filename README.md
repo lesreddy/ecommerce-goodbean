@@ -28,8 +28,7 @@ Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Her
     - [Impending-Features](#impending-features)
 
 4. [**Information Architecture**](#information-architecture)
-    - [Selected Database](#selected-database)
-    - [Data Structure](#data-structure)
+    - [Models](#models)
 
 5. [**Applied Technologies**](#applied-technologies)
 
@@ -140,7 +139,45 @@ The product colours were chosen to really draw the attention of the user to them
 1. To get a working rubbish bin icon on the cart page, ie the user clicks on the bin and it removes the product
 2. Create links from the profile page which allow users to edit their login and security details, payment options, address details and to track orders.
 3. Add more products to the site.
-4. 
+4. Finish the review app, I found the code for creating the views for this page challenging, I need to learn more about the nuts and bolts of Python, Django and database manipulation to implement the full CRUD process here. Still need to put an Update (edit) review feature and Delete feature in this section.
+
+
+# Information Architecture
+
+During the build phase Goodbean used the built in to Django SQLite database, however on deployment to Heroku this changed to the PostgreSQL SQL compliant relational Database.
+
+## Models
+
+The Checkout, Home, Product and Review apps utilise models as part of their functionality.
+
+### Checkout App
+
+Order Model
+
+| Name | Validation | Field Type |
+| ----------- | ----------- | ----------- |
+| full_name | max_length=50, blank=False | CharField | 
+| phone_number | max_length=20, blank=False | CharField | 
+| country | max_length=40, blank=False | CharField |
+| postcode | max_length=20, blank=True | CharField |
+| town_or_city | max_length=40, blank=False | CharField |
+| street_address1 | max_length=40, blank=False | CharField |
+| street_address2 | max_length=40, blank=False | CharField |
+| county | max_length=40, blank=False | CharField |
+| date | | DateField |
+
+This Model was referenced directly from the tutorial in Code Institute, it is not my own original code.
+
+OrderLineItem Model
+
+| Name | Validation | Field Type |
+| ----------- | ----------- | ----------- |
+| order | Order, null=False | ForeignKey | 
+| product | Product, null=False | ForeignKey | 
+| quantiy | blank=False | IntegerField |
+
+This Model was referenced directly from the tutorial in Code Institute
+
 
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
