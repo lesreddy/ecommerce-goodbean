@@ -166,7 +166,7 @@ Order Model
 | county | max_length=40, blank=False | CharField |
 | date | | DateField |
 
-This Model was referenced directly from the tutorial in Code Institute, it is not my own original code.
+Please note the Order Model was referenced directly from the tutorial in Code Institute.
 
 OrderLineItem Model
 
@@ -176,8 +176,84 @@ OrderLineItem Model
 | product | Product, null=False | ForeignKey | 
 | quantiy | blank=False | IntegerField |
 
-This Model was referenced directly from the tutorial in Code Institute
+Please note OrderLineItem Model was referenced directly from the tutorial in Code Institute.
+
+### Home App (About Page)
+
+Contact Model
+
+| Name | Validation | Field Type |
+| ----------- | ----------- | ----------- |
+| first_name | max_length=50 | CharField| 
+| last_name | max_length=50 | CharField | 
+| email | | EmailField |
+| message | | TextField |
+
+### Product App
+
+Product Model
+
+| Name | Validation | Field Type |
+| ----------- | ----------- | ----------- |
+| name | max_length=50 | CharField| 
+| description | max_length=50 | TextField | 
+| price | | DecimalField |
+| image | | ImageField |
+
+The product model is referenced directly from the Code Institute tutorial.
+
+### Review App
+
+Review Model
+
+| Name | Validation | Field Type |
+| ----------- | ----------- | ----------- |
+| name | max_length=50 | CharField| 
+| description | max_length=50 | TextField | 
+| price | | DecimalField |
+| image | | ImageField |
 
 
+# Applied Technologies
+
+### Tools
+- [Visual Studio Code](https://code.visualstudio.com/): IDE used for developing project. 
+- [Django](https://www.djangoproject.com/): Python web framework
+- [Stripe](https://stripe.com): Secure payment platform to facilitate payment transactions
+- [AWS S3 Bucket](https://aws.amazon.com/) to store images entered into the database.
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3.
+- [Figma](https://www.figma.com): online design software used for wireframes
+- [Django Storages](https://django-storages.readthedocs.io/en/latest/): Required for boto3 and AWS S3.
+- [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX required for deployment from Django to Heroku.
+- [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
+- [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
+- [Whitenoise](http://whitenoise.evans.io/en/stable/) to allows the web app to serve its own static files.
+- [Obfuscator](https://obfuscator.io/) to obscure emailjs user key from plain text code.
+- [Imgbb](https://imgbb.com) to store external images for this project that were not entered into the database.
+- [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
+- [GitHub](https://github.com/) to store and share all project code remotely. 
+- [Affinity](): Software designed to edit images.
+- [Browserstack](https://www.browserstack.com/) to test functionality on all browsers and devices.
+- Heroku for deployment
+- [SweetAlert2](https://sweetalert2.github.io/) for beautiful responsive replacement to javascript popup boxes.
+- [Travis](https://travis-ci.org/) for continuous integration.
+- [Django Heroku](https://pypi.org/project/django-heroku/) to improve deployment of django projects on heroku.
+
+
+### Databases
+- [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
+- [SQlite3](https://www.sqlite.org/index.html) for development database, provided by django.
+
+### Libraries
+- [JQuery](https://jquery.com) to simplify DOM manipulation.
+- [Jasmine](https://jasmine.github.io/) to run automated tests on JavaScript and jQuery code.
+- [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery) to make it possible to test jQuery code using Jasmine.
+- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The House of Mouse webshop.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+
+### Languages
+- This project uses HTML, CSS, JavaScript and Python programming languages.
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
