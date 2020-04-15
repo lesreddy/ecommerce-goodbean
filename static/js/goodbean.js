@@ -1,7 +1,7 @@
 // Make messages close after 4 seconds
 
 
-  $( document ).ready(function() {
+$(document).ready(function() {
     setTimeout(function(){document.getElementById('messages').style.display='none';} ,4000);
 });
 
