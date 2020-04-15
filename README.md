@@ -101,7 +101,6 @@ Goodbean is selling a premium coffee product so the design choices were based on
 </div>
 
 
-
 2. Product Colours - OxfordBlue(#02114A), SpartanCrimson(#901616), MughalGreen(#2D6539)
 
 <div align=center>
@@ -216,44 +215,130 @@ Review Model
 
 # Applied Technologies
 
-### Tools
-- [Visual Studio Code](https://code.visualstudio.com/): IDE used for developing project. 
-- [Django](https://www.djangoproject.com/): Python web framework
-- [Stripe](https://stripe.com): Secure payment platform to facilitate payment transactions
-- [AWS S3 Bucket](https://aws.amazon.com/) to store images entered into the database.
-- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to enable creation, configuration and management of AWS S3.
-- [Figma](https://www.figma.com): online design software used for wireframes
-- [Django Storages](https://django-storages.readthedocs.io/en/latest/): Required for boto3 and AWS S3.
-- [Gunicorn](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX required for deployment from Django to Heroku.
-- [Pillow](https://pillow.readthedocs.io/en/stable/) as python imaging library to aid in processing image files to store in database.
-- [Psycopg2](https://pypi.org/project/psycopg2/) as PostgreSQL database adapter for Python.
-- [Whitenoise](http://whitenoise.evans.io/en/stable/) to allows the web app to serve its own static files.
-- [Obfuscator](https://obfuscator.io/) to obscure emailjs user key from plain text code.
-- [Imgbb](https://imgbb.com) to store external images for this project that were not entered into the database.
-- [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
-- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
-- [GitHub](https://github.com/) to store and share all project code remotely. 
-- [Affinity](): Software designed to edit images.
-- [Browserstack](https://www.browserstack.com/) to test functionality on all browsers and devices.
-- Heroku for deployment
-- [SweetAlert2](https://sweetalert2.github.io/) for beautiful responsive replacement to javascript popup boxes.
-- [Travis](https://travis-ci.org/) for continuous integration.
-- [Django Heroku](https://pypi.org/project/django-heroku/) to improve deployment of django projects on heroku.
-
+### Languages
+- HTML, CSS, JavaScript and Python.
 
 ### Databases
-- [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
-- [SQlite3](https://www.sqlite.org/index.html) for development database, provided by django.
+- [SQlite3](https://www.sqlite.org/index.html) Built in to Djang used in the development process.
+- [PostgreSQL](https://www.postgresql.org/) From Heroku used in the final production process.
 
 ### Libraries
 - [JQuery](https://jquery.com) to simplify DOM manipulation.
-- [Jasmine](https://jasmine.github.io/) to run automated tests on JavaScript and jQuery code.
-- [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery) to make it possible to test jQuery code using Jasmine.
 - [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
 - [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The House of Mouse webshop.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
 
-### Languages
-- This project uses HTML, CSS, JavaScript and Python programming languages.
+### Tools
+- [Visual Studio Code:](https://code.visualstudio.com/) IDE used for developing project. 
+- [Django:](https://www.djangoproject.com/) Python web framework
+- [Stripe:](https://stripe.com) Secure payment platform to facilitate payment transactions
+- [AWS S3 Bucket:](https://aws.amazon.com/) For serving the static file from the cloud.
+- [Boto3:](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) For the management of AWS S3.
+- [Figma:](https://www.figma.com) online design software used for wireframes
+- [Django Storages:](https://django-storages.readthedocs.io/en/latest/): Required for boto3 and AWS S3.
+- [Gunicorn:](https://pypi.org/project/gunicorn/) WSGI HTTP Server for UNIX required for deployment from Django to Heroku.
+- [Pillow:](https://pillow.readthedocs.io/en/stable/) Django imaging module
+- [Psycopg2:](https://pypi.org/project/psycopg2/) For plugin to facilitate the use of PostgreSQL and Python.
+- [Imgbb:](https://imgbb.com) To store external images for this Readme File. 
+- [PIP:](https://pip.pypa.io/en/stable/installing/) Installation plugin for installing modules.
+- [Git:](https://gist.github.com/derhuerst/1b15ff4652a867391f03) Version control.
+- [GitHub:](https://github.com/) Remote storage program used to house all of the code for the project and to interact with Heroku for final deployment. 
+- [Affinity:](https://affinity.serif.com/en-gb/photo/) Photo Editing Software used to edit images.
+- [Travis:](https://travis-ci.org/) for continuous integration.
+- [Django Heroku:](https://pypi.org/project/django-heroku/) to improve deployment of django projects on heroku.
+- [Django Bootstrap Forms:](https://pypi.org/project/django-forms-bootstrap/)
+
+# Testing
+
+Refer separate [TESTING.md](TESTING.md) file
+
+# Deployment
+
+## Local Execution
+
+You will need:
+
+1. An IDE (My preference is [Visual Studio Code](https://code.visualstudio.com/))
+2. [Python 3](https://www.python.org/downloads/)
+3. [PIP](https://pip.pypa.io/en/stable/installing/)
+4. [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+
+Active accounts on the following free services:
+1. [Stripe](https://dashboard.stripe.com/register)
+2. [AWS](https://aws.amazon.com/) and [set up an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+
+### Instructions
+
+For a Windows Operating System using VSCODE as the IDE.
+
+1. Clone the repository at https://github.com/lesreddy/ecommerce-goodbean. Alternatively using Git clone use the following command:
+    ```
+    git clone https://github.com/lesreddy/ecommerce-goodbean
+    ```
+
+2. Open IDE, create a terminal session in the correct folder(unzipped file)
+
+3. Create a virtual environment by entering the command:
+    ```
+    python -m .venv venv
+    ```  
+4. Activate the .venv with the command:
+    ```
+    .venv\Scripts\activate 
+    ```
+5. Upgrade pip locally with the following command(if required)
+    ```
+    pip install --upgrade pip.
+    ```
+
+6. Install the required modules with the following command 
+    ```
+    pip -r requirements.txt.
+    ```
+
+7. Set up the following environment variables within your IDE. 
+
+    - Locate `settings.json` file within the .vscode directory and add your environment variables as below. Ensure to restart your machine: 
+
+    ```json
+    "terminal.integrated.env.windows": {
+        "HOSTNAME": "<enter hostname here>",
+        "DEV": "1",
+        "SECRET_KEY": "<enter key here>",
+        "STRIPE_PUBLISHABLE": "<enter key here>",
+        "STRIPE_SECRET": "<enter key here>",
+        "STRIPE_SUCCESS_URL": "<enter url here>",
+        "STRIPE_CANCEL_URL": "<enter url here>",
+        "AWS_ACCESS_KEY_ID": "<enter key here>",
+        "AWS_SECRET_ACCESS_KEY": "<enter key here>",
+        "AWS_STORAGE_BUCKET_NAME": "<enter bucket name here>",
+    }
+    ```
+
+8. Reactivate your virtual environment with the following command (same as step 4):
+    ```
+    .venv\Scripts\activate 
+    ```
+
+9. In order to migrate the admin panel model go to the terminal and enter the following command:
+    ```
+    python manage.py migrate
+    ```
+
+10. Create a superuser account to access the django admin panel with the following command:
+    ```
+    python manage.py createsuperuser
+    ```
+
+11. Ensure to enter a valid username and password for the superuser (you will not see the password on the screen when typing and repeating).
+
+12. You can now run the program locally with the following command: 
+    ```
+    python manage.py runserver
+    ```
+13.  To access the admin panel put `/admin` at the end of the url once you have executed the manage.py file. 
+
+
+
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
