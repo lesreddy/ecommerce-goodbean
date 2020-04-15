@@ -373,7 +373,14 @@ AWS_STORAGE_BUCKET_NAME | `<your AWS S3 bucket name>`
 
 10. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
 
-11. Once the build is complete, click the "View app" button provided.
+11. Once the build is complete, click the "View app" button provided.  Deployment complete!
+
+# Credits
+
+## Media
+
+
+
 
 
 [![Build Status](https://travis-ci.org/lesreddy/ecommerce-goodbean.svg?branch=master)](https://travis-ci.org/lesreddy/ecommerce-goodbean)
