@@ -134,12 +134,6 @@ caption p {
 }
 
 
-hr {
-    background: white;
-    height: 1px;
-    border: none;
-}
-
 .homebase {
     background: url("/static/img/beanswithgrinder.jpg");
     background-position: center;
@@ -227,6 +221,8 @@ hr {
   transition: 0s;
 }
 
+/* end of referenced code from https://codepen.io/tsimenis/pen/BKdENX*/
+
 /* Products Page */
 
 .productlanding {
@@ -238,7 +234,6 @@ hr {
     background-attachment: fixed;
     height: 50%;
 }
-
 
 
 .productrow {
@@ -296,7 +291,6 @@ hr {
   background-attachment: fixed;
 }
 
-
 #brazilbg {
   background: rgb(45, 101, 57, 0.8);
 }
@@ -308,7 +302,6 @@ hr {
 #costabg {
   background: rgba(2, 17, 74, 0.8);
 }
-
 
 #costa-wrapper {
   width: 100%;
@@ -398,7 +391,6 @@ hr {
 #payment-form {
     color: #fff;
 }
-
 
 /* Cart App/Page */
 
@@ -596,7 +588,6 @@ footer {
     padding: 25px 0;
 }
 
-
 .social a i {
     width: 32px;
     height: 32px;
@@ -625,5 +616,4 @@ footer {
     background-color: #000;
 }
 
-/* Media Queries */
 

@@ -9,9 +9,6 @@ from accounts.forms import UserLoginForm, UserRegistrationForm
 
 '''All of the below views were referenced from the to-do tutorial on the code institute Website, I have made some edits but most of it is not my own making'''
 
-def index(request):
-    """Return the index.html file"""
-    return render(request, 'index.html')
 
 @login_required
 def logout(request):

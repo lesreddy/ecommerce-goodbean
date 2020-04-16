@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from accounts.views import index, logout, login, registration, user_profile
+from accounts.views import logout, login, registration, user_profile
 from accounts import url_reset
 
 '''All of the below urls were referenced from the todo tutorial on the code institute Website, they are of not my own making'''
