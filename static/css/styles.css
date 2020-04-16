@@ -1,6 +1,9 @@
-/************************* Global **************************/
 
 @import url('https://fonts.googleapis.com/css?family=Amaranth:700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Global */
 
 * {
   margin: 0;
@@ -24,22 +27,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
 .subheading {
     font-family: 'Amaranth', sans-serif;
     font-size: 3rem;
 }
 
-.fontstyle2 {
-    color: black;
-}
-
-.fontstyle1 {
-    color: black;
-    border-bottom: 1px solid black;
-    padding-bottom: 0.20rem;
-}
-
-/************************* Login Page **************************/
+/* Login Page */
 
 .cform {
     width: 100%;
@@ -50,11 +48,12 @@ html {
     height: 28rem;
 }
 
-#div_id_username, #div_id_password {
+/* Cannot use class as its a django form */
+#div_id_username, #div_id_password { 
     color: white;
 }
 
-/************************* Registration Page **************************/
+/* Registration Page */
 
 .regboxrow {
     min-width: 50%;
@@ -66,12 +65,9 @@ html {
     min-width: 50%;
 }
 
+/* Cannot use class as its a django form */
 #div_id_password1, #div_id_password2 {
     color: white;
-}
-
-.icon-bar {
-    background-color: #fff;
 }
 
 .accountform {
@@ -86,16 +82,11 @@ html {
     border-radius: 9px;
 }
 
-.label-warning[href],
-.badge-warning[href] {
-    background-color: #c67605;
-}
-
 .product {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 18rem;
+    width: 16rem;
     height: 18rem;
     margin: 0 auto;
 }
@@ -125,7 +116,7 @@ caption p {
     min-height: 40px;
 }
 
-/************************* Home Page **************************/
+/* Home Page */
 
 .title {
     font-family: 'Amaranth', sans-serif;
@@ -141,11 +132,6 @@ caption p {
     height: 100vh;
 
 }
-
-h2,h4 {
-    color: white;
-}
-
 
 
 hr {
@@ -217,7 +203,7 @@ hr {
   height: 1px;
   top: 50%;
   margin-top: -0.5px;
-  background: black;
+  background: #000;
 }
 
 .strike:before {
@@ -225,12 +211,12 @@ hr {
 }
 .strike:after {
   right: 2.5px;
-  background: black;
+  background: #000;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .strike:hover:before {
-  background: black;
+  background: #000;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -241,7 +227,7 @@ hr {
   transition: 0s;
 }
 
-/************************* Products Page **************************/
+/* Products Page */
 
 .productlanding {
     background: url("/static/img/coffeewithbeans2.jpg");
@@ -263,7 +249,7 @@ hr {
 
 .productbg {
     cursor: pointer;
-    background-color: white;
+    background-color: #fff;
     transition: 0.08s ease-in;
 }
 
@@ -293,12 +279,12 @@ hr {
 }
 
 .buttonproduct:hover {
-  color: white;
+  color: #fff;
   background: #daa317;
   border: 2px #daa317 solid;
   text-decoration: none;
 }
-/****************************** About Page ******************************** */
+/*About Page*/
 
 #aboutjumbo {
   background: url("/static/img/landing2.jpg");
@@ -368,7 +354,7 @@ hr {
 }
 
 .ethiopia-wrapper {
-  background: rgba(144, 22, 22, 0.8);
+  background: rgb(145, 22, 22, 0.8);
   width: 60%;
   height: 60%;
   border-bottom-left-radius: 10px;
@@ -376,7 +362,7 @@ hr {
 }
 
 .costa-wrapper {
-  background: rgba(2, 17, 74, 0.8);
+  background: rgb(2, 17, 74, 0.8);
   width: 60%;
   height: 60%;
   border-bottom-left-radius: 10px;
@@ -386,7 +372,7 @@ hr {
 .buynow {
   border-radius: 0px 0px 10px 10px;
   background: #daa317;
-  color: white;
+  color: #fff;
   border: 2px #daa317 solid;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -402,39 +388,38 @@ hr {
 .buynow:hover {
     background: #d2a83d;
     border: 2px #d2a83d solid;
-    color: wheat;
+    color: #fff;
     text-decoration: none;
     border-top: none;
 }
 
-/************************* Checkout App/Page  **************************/
+/* Checkout App/Page  */
 
 #payment-form {
-    color: white;
+    color: #fff;
 }
 
 
-
-/************************* Cart App/Page **************************/
+/* Cart App/Page */
 
 .hed1 {
-    color: white;
+    color: #fff;
 }
 
 .bordered {
-    background: white;
+    background: #fff;
     padding: .5rem;
     box-shadow: 3px 3px 5px 1px #ccc;
 }
 
-/************************* Navbar **************************/
+/*Navbar */
 
 .karticon {
-    color: white;
+    color: #fff;
 }
 
 .karticon:hover {
-    color: grey;
+    color: #daa317;
 }
 
 .gbnavlinks {
@@ -445,46 +430,46 @@ hr {
 
 /* change the background color */
 .navbar-custom {
-    background-color: black;
+    background-color: #000;
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff;
-    background-color: black; /* add background-color to active links */
+    color: #fff;
+    background-color: #000; /* add background-color to active links */
 }.navbar-custom {
-    background-color: black;
+    background-color: #000;
 }
 
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: white;
+    color: #fff;
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color:white;
+    color:#fff;
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: grey;
+    color:#daa317;
 }
 
-/* for dropdown only - change the color of droodown */
+/* for dropdown only - change the color of dropdown */
 .navbar-custom .dropdown-menu {
-    background-color: black;
+    background-color: #000;
 }
 .navbar-custom .dropdown-item {
-    color: white;
+    color: #fff;
 }
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
-    color: grey;
-    background-color:white;
+    color: #daa317;
+    background-color:#fff;
 }
 .navbar {
     padding: 0.25rem 1rem;
@@ -493,7 +478,7 @@ hr {
 /* Set the border color for Toggler and Toggler Icon*/ 
           
 .custom-toggler.navbar-toggler {
-    border-color: black;
+    border-color: #000;
 }
 
 /* Change the color in the stroke property of the image data */
@@ -513,7 +498,7 @@ hr {
     background-size: auto;
 }
 
-/********************* Contact Page *************************/
+/* Contact Page */
 
 #contactlanding {
     background: url("/static/img/coffee beans on table.jpg");
@@ -523,20 +508,21 @@ hr {
     height: 130vh;
 }
 
+/* django form id so cant add class */
 #div_id_last_name, #div_id_first_name, #div_id_email, #div_id_message {
-    color: white;
+    color: #fff;
 }
 
+/* django form id so cant add class */
 #div_id_message div textarea {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
+/* django form id so cant add class */
 #div_id_message {
     margin-bottom: 0px;
 }
-
-
 
 .contact {
     min-width: 100%;
@@ -544,7 +530,7 @@ hr {
     background: rgba(7, 13, 19, 0.8);   
 }
 
-/************************* Reviews **************************/
+/* Reviews */
 
 .reviewlanding {
     background: url("/static/img/reviewarea.jpg");
@@ -565,9 +551,7 @@ hr {
     height: auto;
 }
 
-
-
-/************************* Footer **************************/
+/* Footer */
 
 footer {
     position: relative;
@@ -581,7 +565,7 @@ footer {
     font-family: 'Amaranth', sans-serif;
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: #000;
     font-size: 2.2rem;
 }
 
@@ -591,14 +575,14 @@ footer {
 }
 
 .footer-anchor {
-    color: white;
+    color: #fff;
     list-style: none;
     text-decoration: none;
 }
 
 .footer-anchor:hover {
     text-decoration: none;
-    color: grey;
+    color: #daa317;
 }
 
 #map {
@@ -621,14 +605,14 @@ footer {
     font-size: 14px;
     line-height: 7px;
     text-align: center;
-    color: #050505;
+    color: #000;
     border: none;
-    background: #ffffff;
+    background: #fff;
     transition: all 0.35s ease-in-out;
 }
 
 .social a i:hover {
-    background: #050505;
+    background: #000;
     color: #fff;
 }
 
@@ -638,13 +622,8 @@ footer {
 }
 
 .footer-wrap {
-    background-color: black;
+    background-color: #000;
 }
 
 /* Media Queries */
 
-@media only screen and (max-device-width: 1366px) {
-  .productlanding {
-    background-attachment: scroll;
-  }
-}

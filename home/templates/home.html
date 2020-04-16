@@ -3,7 +3,10 @@
 {% load staticfiles %}
 {% block content %}
 
+<!-- Parallax Scrolling -->
 <header class="landing d-flex">
+
+<!-- Landing Page -->
 <div class="container-fluid d-flex align-items-center justify-content-center">
 
 	<div class="row d-flex justify-content-center text-center">
@@ -11,13 +14,10 @@
 		<div class="col-md-12">
 
 			<!-- Heading -->
-			<h2 class="title mb-2">Goodbean</h2>
-
-			<!-- Divider -->
-			<hr>
+			<h2 class="text-white border-bottom border-white pb-3 title mb-2">Goodbean</h2>
 
 			<!-- Description -->
-			<h2 class="my-4">Premium Coffee Roasters</h2>
+			<h2 class="text-white my-4">Premium Coffee Roasters</h2>
 			<a href="{% url 'products' %}" class="buttonhome p-2">Order Now</a>
 
 		</div>
@@ -25,7 +25,9 @@
 	</div>
 </div>
 </header>
-<div class="container-fluid">
+
+<!-- Company Story -->
+<section class="container-fluid">
 	<div class="row my-5">
 		<div class="offset-2 col-8 offset-md-4 col-md-4">
 			<p class="text-center">We are coffee roasters, the best at what we do. We require equally complete knowledge and skills from our stakeholders. The result is an incredible synergy which creates the perfect blend of coffee, every time.</p>
@@ -56,9 +58,9 @@
             </ul>
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="homebase">
-</div>
+<!-- Parallax Scrolling -->
+<div class="homebase"></div>
 {% endblock %}
 </html>

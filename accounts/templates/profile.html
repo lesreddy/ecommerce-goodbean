@@ -8,11 +8,11 @@
 
 {% block content %}
 
-<section>
-        <div class="row m-3">
-            <div class="offset-lg-1 col-lg-3 d-flex justify-content-center">
+<section class="min-vh-75">
+        <div class="row min-vh-100 align-items-center justify-content-center m-3">
+            <div class="col-lg-3 d-flex justify-content-around">
                 <div class="card border-0" style="width: 13rem;">
-                    <img class="avatar card-img-top" src="{% static 'img/gbavatar.png' %}" alt="profile avatar">
+                    <img class="text-center avatar card-img-top" src="{% static 'img/gbavatar.png' %}" alt="profile avatar">
                     <div class="card-body text-center">
                         <h5 class="card-title text-capitalize">Hello, {{ user }}</h5>
                     </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="row productbg p-3 rounded border border-dark mb-3">
                     <div class="col-6 text-center">
-                        <img class="rounded" src="{% static 'img/lock.png' %}" alt="order-image" style="width: 5rem;">
+                        <img class="rounded" src="{% static 'img/lock.png' %}" alt="order-image" style="width: 4rem;">
                     </div>
                     <div class="col-6">
                         <div class="row">
