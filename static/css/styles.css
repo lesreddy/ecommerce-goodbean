@@ -263,7 +263,7 @@ hr {
 
 .productbg {
     cursor: pointer;
-    background-color: #f8f9fa;
+    background-color: white;
     transition: 0.08s ease-in;
 }
 
