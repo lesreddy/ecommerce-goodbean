@@ -65,17 +65,17 @@
                 </li>
 			</ul>
             <form  action="{% url 'search' %}" method="get" class="form-inline d-flex my-2 my-lg-0" >
-                    <input class="form-control gbnavlinks text-capitalize border-1 border-dark rounded-0 mr-0" name="q" type="search" placeholder="Product Search" aria-label="Search">
-                    <button type="search" class="gbnavlinks btn btn-warning btn-sm rounded-0 buynow text-white-50 font-weight-normal">Search</button>
+                    <input class="form-control gbnavlinks text-capitalize border-1 border-dark rounded-0 mr-0" id="search" name="q" type="search" placeholder="Product Search" aria-label="Search">
+                    <button type="search" class="enableOnInput gbnavlinks btn btn-warning btn-sm rounded-0 buynow text-white-50 font-weight-normal">Search</button>
             </form>
 		</div>
 	</nav>
     <!-- Messages -->
     {% if messages %}
-    <ul class="messages" id="messages">
+    <ul class="mb-0 messages" id="messages">
         {% for msg in messages %}
         <li>
-            <div class="alert alert-{{msg.level_tag}}" role="alert">
+            <div class="mb-0 alert alert-{{msg.level_tag}}" role="alert">
                 {{msg.message}}
             </div>
         </li>
