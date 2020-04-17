@@ -22,3 +22,17 @@ $(document).ready(function () {
             });
         }
     }
+
+/**
+ * Disable search bar until user inputs a key
+ */
+
+$(function () {
+        $('#search').onkeyup(function () {
+            if ($(this).val() == '') {
+                $('.enableOnInput').prop('disabled', true);
+            } else {
+                $('.enableOnInput').prop('disabled', false);
+            }
+        });
+    });
