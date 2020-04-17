@@ -51,22 +51,26 @@ As a visitor to Goodbean I expect:
 
 - Users can see extra information about the products clearly and easily
 - Originally wanted to wire the reviews through this screen but as I linked this page through the products app cluttering up.  In hindsight would have created a separate abouts app rather than a separate reviews app and wired all the about and reviews info through it.
-
+- Future improvement would be to create a separate model for this page so that an admin user could create a new about card for each new product rather than hardcoding each additional product.
 
 #### Login Page
 
--
-- 
+- Tested ok
+- This 
 - 
 
 
 #### Cart Page
 
+- Everything works fine here however I cannot get the rubbish bin to work, future improvement would be to enable this properly.
 
 #### Contact Page
 
+- Tested ok 
 
 ### Responsiveness
+
+Goodbean was designed for mobile, tablet and desktop and on all tests I performed it was fully responsive.
 
 
 ### Bugs
