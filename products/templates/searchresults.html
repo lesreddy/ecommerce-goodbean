@@ -3,11 +3,13 @@
 {% load static from staticfiles %}
 
 {% block content %}
+
+<!-- Parallax scrolling -->
 <div class="mb-0 jumbotron productlanding">
 </div>
 <section class="bg-light">
 
-<!-- This piece of code was referenced from Lukasz Suaresz project https://django-tech-ecommerce-app.herokuapp.com/ -->
+<!-- The idea for this piece of code was referenced from Lukasz Suaresz project https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app/blob/master/products/templates/allproducts.html -->
 {% if not products %} 
 				<div class="my-5 bg-white jumbotron jumbotron-fluid">
 					<div class="container-fluid">
@@ -16,7 +18,8 @@
 				</div>
             {% else %}
             <!-- end of referenced code from Lukasz project -->
-	<div class="py-5 bg-none d-flex flex-column justify-content-center">
+	
+    <div class="py-5 bg-none d-flex flex-column justify-content-center">
 		<div class="row pb-3">
             {% for product in products %}
 			<div class="col-lg-4 text-center">
@@ -65,5 +68,7 @@
 	</div>
     {% endif %}
 </section>
+
+<!-- Parrallax scrolling -->
 <div class="mb-0 jumbotron productlanding"></div>
 {% endblock %}
