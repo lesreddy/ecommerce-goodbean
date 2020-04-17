@@ -13,7 +13,7 @@ Referring user stories in UX of Readme Goodbean responds in the following way:
 
 
 As a visitor to Goodbean I expect:
-1. To find what I am looking for easily and effectively - Yes (simple design)
+1. To find what I am looking for easily and effectively - Yes (simple easily navigatable design)
 2. To use it effectively from any device including Mobile, Tablet and Desktop - Yes (fully responsive)
 3. Be confident in the purchasing process so that it feels secure and reliable - Yes (stripe functionality)
 4. To be able to make contact with Goodbean easily if needed - Yes (contact form)
@@ -29,19 +29,35 @@ As a visitor to Goodbean I expect:
 
 * Ran [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the css file and also [W3C Markup Validation Service](https://validator.w3.org/) to validate the html markup.
 
-### Pages
-
+### Pages - Manually Tested Notes
 
 #### Home Page
+
+- Opens on the landing page and users can access the ordering secion if order now button selected
+- scrolls down through through images 
+- User can access all main pages from navbar, all work ok
+- User can access all links in footer
+- Future improvement would be to disable the search box until used (jquery)
 
 
 #### Products Page
 
+- User can see all products clearly 
+- Future improvement would be to add more products and have a sub menu off the navbar with all different categories
+- parallax scrolling works well
+- There is an error when qty is 0 and 'view carts' is pressed.  The best way to resolve this is to remove the button and only when a qty is put in would the button appear (jquery or js)
 
 #### About Page
 
+- Users can see extra information about the products clearly and easily
+- Originally wanted to wire the reviews through this screen but as I linked this page through the products app cluttering up.  In hindsight would have created a separate abouts app rather than a separate reviews app and wired all the about and reviews info through it.
+
 
 #### Login Page
+
+-
+- 
+- 
 
 
 #### Cart Page

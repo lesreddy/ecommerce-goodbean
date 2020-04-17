@@ -420,6 +420,8 @@ caption p {
     font-size: 0.8rem;
 }
 
+/* Referenced Stack overflow to assist with changing the navbar colours https://stackoverflow.com/questions/43381596/bootstrap-4-navbar-color */
+
 /* change the background color */
 .navbar-custom {
     background-color: #000;
@@ -472,6 +474,7 @@ caption p {
 .custom-toggler.navbar-toggler {
     border-color: #000;
 }
+/* End of stack overflow referencing */
 
 /* Change the color in the stroke property of the image data */
 .custom-toggler .navbar-toggler-icon {
@@ -479,13 +482,11 @@ caption p {
 }
 
 /* Change padding around Toggler Icon */
-
 .navbar-toggler {
     padding: 0px 0px;
 }
 
 /* Ensure size is correct for Toggler Icon design  */
-
 .navbar-toggler-icon {
     background-size: auto;
 }
@@ -606,7 +607,6 @@ footer {
     background: #000;
     color: #fff;
 }
-
 
 .footer {
   background-image: linear-gradient(#af7d00, #ffc107);

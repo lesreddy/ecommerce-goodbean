@@ -1,9 +1,7 @@
 $(document).ready(function () {
-    if ($('messages').is(':visible'))  {
         setTimeout(function () {
-           document.getElementById('messages').display = 'none';
+           document.getElementById('messages').style.display = 'none';
         }, 4000);
-    }
 });
 /**
  * Goodbean location in Footer
