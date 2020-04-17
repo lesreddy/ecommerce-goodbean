@@ -211,7 +211,10 @@ Review Model
 # Applied Technologies
 
 ### Languages
-- HTML, CSS, JavaScript and Python.
+- HTML
+- CSS
+- JAVASCRIPT
+- [PYTHON](www.python.org)
 
 ### Databases
 - [SQlite3](https://www.sqlite.org/index.html) Built in to Djang used in the development process.
