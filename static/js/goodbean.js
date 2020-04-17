@@ -3,9 +3,12 @@
  */
 
 $(document).ready(function () {
-        setTimeout(function () {
-           document.getElementById('messages').style.display = 'none';
-        }, 4000);
+  const messages = $('#messages');
+  if (messages.length > 0) {
+    setTimeout(function () {
+      messages.css('display', 'none');
+    }, 4000);
+  }
 });
 /**
  * Goodbean location in Footer
