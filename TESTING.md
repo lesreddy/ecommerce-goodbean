@@ -55,23 +55,51 @@ As a visitor to Goodbean I expect:
 
 #### Login Page
 
-- Tested ok
-- This 
-- 
+- All links tested ok
+- Login tests all ok
 
+#### Password Reset Page
+
+- Tested ok once deployed to Heroku
 
 #### Cart Page
 
-- Everything works fine here however I cannot get the rubbish bin to work, future improvement would be to enable this properly.
+- Future improvement would be to enable the remove product icon (rubbish bin) this is not currently working.
 
 #### Contact Page
 
-- Tested ok 
+- Everything tested ok on this page
+
+#### Review Content Page
+
+- Everything tested ok on this page
+
+#### Review Details Page
+
+- Small bug here on testing when review goes to 100 button moves down, on noticing too late to fix
+
+#### Checkout Page
+
+- Everything works fine on this page although styling needs improve when multiple quantities of product chosen
+
+#### Profile Page
+
+- No links work on this page, will fix in the future.
+- When deployed to heroku had an issue with this page so had to redesign.
 
 ### Responsiveness
 
 Goodbean was designed for mobile, tablet and desktop and on all tests I performed it was fully responsive.
 
+### Django Testing
+
+I did not attempt any in Django testing as my time was consumed by learing the other components of Django to put the project together.  This is a big opportunity for future learning.
+
 
 ### Bugs
 
+- Gitpod caused me some bugs in developing.  An upgrade issue somehow caused a problem which meant losing a days work.  I attempted communicating directly with Gitpod to try and remedy an issue with the icon settings in Gitop IDE, each time I login I have to set something in preferences for them to work.  Currently still not fixed.
+
+- Had many attempts at trying to fix the basic JS function which turns off the messages after 4 seconds.  Whilst it works it generates a null error in the console.  I know its something to do with firing the settimeout function only when required but couldnt completely fix.
+
+-  Not exactly a bug but spent a good amount of time trying to complete the CRUD process in the reviews app, could not get the update (edit review) and delete (delete review) part of this process to work so its another future learning opportunity to complete this.

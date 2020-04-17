@@ -1,3 +1,7 @@
+/**
+ * The idea for this code was referenced from testing Lukasz Suaresz site https://django-tech-ecommerce-app.herokuapp.com/
+ */
+
 $(document).ready(function () {
         setTimeout(function () {
            document.getElementById('messages').style.display = 'none';
