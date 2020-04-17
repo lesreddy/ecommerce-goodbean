@@ -8,7 +8,7 @@
 
 ## Introduction
 
-[Goodbean](https://les-goodbean.herokuapp.com/) is a student Website utilising many recently learnt skills encompassing HTML, CSS, BOOTSTRAP4, JAVASCRIPT(& JQUERY), and PYTHON.  It is builty using the DJANGO Framework and it showcases a mock ecommerce website selling premium coffee beans.  It is the final of 4 projects in for the Diploma in full stack development trough the coveted Code Institute. 
+[Goodbean](https://les-goodbean.herokuapp.com/) Goodbean is essentially a sales site so its main function and purpose is to sell as much premium coffee as possible on a safe and secure platform.  It is also the final milestone project as part of my full stack development diploma through the coveted Code Institute 
 
 Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Heroku.
 
@@ -16,39 +16,34 @@ Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Her
 
 ## Table of Contents
 
-1. [**Site Purpose**](#site-purpose)
-2. [**UX**](#ux)
+1. [**UX**](#ux)
     - [Goals](#developer-goals)
     - [User Stories](#user-stories)
     - [Design](#design)
     - [Wireframes](#wireframes)
 
-3. [**Features**](#features)
+2. [**Features**](#features)
     - [Current-Features](#current-features)
     - [Impending-Features](#impending-features)
 
-4. [**Information Architecture**](#information-architecture)
+3. [**Information Architecture**](#information-architecture)
     - [Models](#models)
 
-5. [**Applied Technologies**](#applied-technologies)
+4. [**Applied Technologies**](#applied-technologies)
 
-6. [**Testing**](#testing)
+5. [**Testing**](#testing)
     
-7. [**Deployment**](#deployment)
+6. [**Deployment**](#deployment)
     - [Local Execution](#local-execution)
     - [Heroku Deployment](#heroku-deployment)
 
-8. [**Credits**](#credits)
+7. [**Credits**](#credits)
     - [Media](#media)
     - [Code](#code)
     - [Acknowledgements](#acknowledgements)
 
-9. [**Final Notes**](#final-notes)
+8. [**Final Notes**](#final-notes)
 
-
-# Site Purpose
-
-Goodbean is essentially a sales site so its main function and purpose is to sell as much premium coffee as possible on a safe and secure platform.
 
 # UX
 
@@ -223,13 +218,12 @@ Review Model
 - [SQlite3](https://www.sqlite.org/index.html) Built in to Djang used in the development process.
 - [PostgreSQL](https://www.postgresql.org/) From Heroku used in the final production process.
 
-### Libraries
-- [JQuery](https://jquery.com) to simplify DOM manipulation.
-- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
-- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The House of Mouse webshop.
-- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+### Libraries & Tools
 
-### Tools
+- [JQuery](https://jquery.com) to simplify DOM manipulation.
+- [Bootstrap](https://www.bootstrapcdn.com/) to simplify structure and expediate responsive development.
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
 - [Visual Studio Code:](https://code.visualstudio.com/) IDE used for developing project. 
 - [Django:](https://www.djangoproject.com/) Python web framework
 - [Stripe:](https://stripe.com) Secure payment platform to facilitate payment transactions
