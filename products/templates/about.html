@@ -3,7 +3,13 @@
 {% load static from staticfiles %}
 
 {% block content %}
+
+<!-- Parallax scrolling -->
+
 <div class="jumbotron mb-0" id="aboutjumbo"></div>
+
+<!-- Brazil Section -->
+
 <section class="bg-light">
     <div class="row" id="brazil">
       <div class="col-md-4 mb-5 d-flex flex-column">
@@ -52,6 +58,9 @@
         </div>
         <a href="{% url 'reviewhome' %}" class="btn btn-lg btn-block btn-warning buynow text-uppercase">See Reviews</a>
       </div>
+
+<!-- Ethiopia Section -->
+
       <div class="col-md-4 mb-5">
         <div class="container-fluid p-2 row">
           <div class="d-flex align-items-center justify-content-center" id="ethiopia-wrapper">
@@ -95,6 +104,9 @@
         </div>
         <a href="{% url 'reviewhome' %}" class="btn btn-lg btn-block btn-warning buynow text-uppercase">See Reviews</a>
       </div>
+
+<!-- Costa Rica Section -->
+
       <div class="col-md-4 mb-5">
         <div class="container-fluid p-2 row">
           <div class="d-flex align-items-center justify-content-center" id="costa-wrapper">
