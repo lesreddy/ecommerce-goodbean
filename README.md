@@ -37,7 +37,7 @@ Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Her
     - [Heroku Deployment](#heroku-deployment)
 
 7. [**Credits**](#credits)
-    - [Media](#media)
+    - [Content](#content)
     - [Code](#code)
     - [Acknowledgements](#acknowledgements)
 
@@ -241,6 +241,7 @@ Review Model
 - [Travis:](https://travis-ci.org/) for continuous integration.
 - [Django Heroku:](https://pypi.org/project/django-heroku/) to improve deployment of django projects on heroku.
 - [Django Bootstrap Forms:](https://pypi.org/project/django-forms-bootstrap/)
+- [pexels](https://www.pexels.com/) for images
 
 # Testing
 
@@ -369,10 +370,30 @@ AWS_STORAGE_BUCKET_NAME | `<your AWS S3 bucket name>`
 
 11. Once the build is complete, click the "View app" button provided.  Deployment complete!
 
+
 # Credits
 
-## Media
+## Content
 
+- Terms and conditions and privacy forms are standard templates sourced from https://ec.europa.eu/info/law/law-topic/data-protection_en
+
+
+## Code
+
+I referenced three pieces of code from Lukasz Suaresz's project https://github.com/Code-Institute-Submissions/django-tech-ecommerce-app which was featured in November issue of Code Insider they are the following:
+
+1. The idea of slicing the products model using `{% for product in products|slice:":1" %}`
+2. The idea of  setting a time limit on the messages to stop after 4 seconds `setTimeout(function(){document.getElementById('messages').style.display='none';},4000)`
+3. The idea to loop through the search app to return no product found using `{% if not products %}` 
+
+I want to thank Lukasz for this.
+
+For the accounts, cart, checkout, products and search apps I referenced a lot of it from the Code Institute course material, all the styling is my own but much of the django coding is referenced.  It is mentioned in the apps as well.
+
+
+## Acknowledgements
+
+Special thanks to my mentor [Simen Daehlin](https://github.com/Eventyret) for all is invaluable assistance over the whole course and all the tutors in the tutoring and also all the very helpful team members at student care.
 
 
 
