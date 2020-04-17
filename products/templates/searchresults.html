@@ -6,11 +6,16 @@
 <div class="mb-0 jumbotron productlanding">
 </div>
 <section class="bg-light">
+
+<!-- This piece of code was referenced from Lukasz Suaresz project https://django-tech-ecommerce-app.herokuapp.com/ -->
 {% if not products %} 
-                  <div>
-                     <p>No Products found</p>
-                  </div>
+				<div class="my-5 bg-white jumbotron jumbotron-fluid">
+					<div class="container-fluid">
+						<h1 class="display-5 text-center">Product Not Found</h1>
+					</div>
+				</div>
             {% else %}
+            <!-- end of referenced code from Lukasz project -->
 	<div class="py-5 bg-none d-flex flex-column justify-content-center">
 		<div class="row pb-3">
             {% for product in products %}
