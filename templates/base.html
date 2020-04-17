@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <html>
 	<head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{% block page_title %}{% endblock %} </title>
         <!-- Bootstrap CDN  -->
@@ -12,6 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <!-- Google Maps API -->
         <link href="https://fonts.googleapis.com/css?family=Amaranth:700&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png"  sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
 	</head>
     <body>   
     <!-- Navbar -->
