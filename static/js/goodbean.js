@@ -32,7 +32,7 @@ $(document).ready(function () {
  */
 
 $(function () {
-        $('#searchinput').onkeyup(function () {
+        $('#searchinput').keyup(function () {
             if ($(this).val() == '') {
                 $('.enableOnInput').prop('disabled', true);
             } else {
