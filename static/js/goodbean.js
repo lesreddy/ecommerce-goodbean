@@ -28,7 +28,7 @@ $(document).ready(function () {
  */
 
 $(function () {
-        $('#search').onkeyup(function () {
+        $('#searchinput').onkeyup(function () {
             if ($(this).val() == '') {
                 $('.enableOnInput').prop('disabled', true);
             } else {
