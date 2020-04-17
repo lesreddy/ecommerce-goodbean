@@ -13,7 +13,6 @@
 Click [here](https://les-goodbean.herokuapp.com/) to see the deployed app in Heroku.
 
 
-
 ## Table of Contents
 
 1. [**UX**](#ux)
